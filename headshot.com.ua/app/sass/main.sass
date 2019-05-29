@@ -3,18 +3,18 @@
 @import "libs"
 
 ::placeholder
-	color: #666
+	color: #fff
 
 ::selection
 	background-color: $accent
 	color: #fff
 
 body
-	font-size: 16px
+	font-size: 17px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: "CondProReg", sans-serif 
+	font-family: "CondProItalic", sans-serif
 	overflow-x: hidden
 	color: #555
 	input, textarea
@@ -25,18 +25,340 @@ body
 		&:required:valid
 			border-color: green
 
-.img-responsive
+.img-resp
 	display: block
 	max-width: 100%
 	height: auto
 	&.img-width
-		width: 100%
+		width: 100% 
 
 .text-center
 	text-align: center
 
 b, strong
 	font-weight: bold
+
+.font-italic
+	$default-font: "CondProItalic", sans-serif
+
+.col-left-box
+	max-width: 155px
+	background-color: red
+
+.navvbar
+	max-height: 100px
+	.row
+		height: 100%
+	.left
+		.title
+			margin-left: 20px
+			font-size: 16px
+			line-height: 16px
+			font-weight: bold
+			text-transform: uppercase
+			color: #000
+		.img	
+			img
+				height: 80px
+	.right
+		overflow: hidden
+		.mail, .phone
+			font-size: 14px
+			font-weight: bold
+			text-transform: uppercase
+			text-align: center
+			padding-right: 35px
+			padding-left: 35px
+			a
+				color: #fff
+
+		.mail
+			position: relative
+			padding-right: 45px
+			a
+				color: #000
+		.mail:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			background-color: #e8e8e8
+			z-index: -1
+			transform: skew(-20deg)
+		.phone
+			position: relative
+			margin-right: -15px
+			padding-left: 15px
+			a
+				padding-right: 15px
+		.phone:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: -20px
+			background-color: #19a4c7
+			z-index: -1
+			transform: skew(-20deg)
+/**** baner ****/
+.baner
+	position: relative
+	.h1-box
+		transform: skew(-20deg)
+		position: absolute
+		top: 50px
+		left: 50px
+		background: #19a4c7
+		max-width: 470px
+		padding: 10px 50px 10px 40px
+		font-weight: bold
+		text-transform: uppercase
+		text-align: left
+		color: #fff
+		span
+			transform: skew(20deg)
+			font-size: 24px
+			line-height: 24px
+			margin: 0px 0 0 13px
+			display: block
+		span.bg
+			font-size: 69px
+			line-height: 69px
+			margin: 0 0 0px 0px
+		span.sm
+			font-size: 29px
+			line-height: 29px
+			margin: 0 0 0 -6px
+	.h2-box
+		position: absolute
+		background: red
+		top: 192px
+		left: 85px
+		transform: skew(-20deg)
+		padding: 15px
+		font-weight: bold
+		span
+			transform: skew(20deg)
+			display: block
+			color: #fff
+			font-size: 16px
+			line-height: 16px
+			text-transform: uppercase	
+	.h3-box
+		position: absolute
+		background: #363437
+		top: 238px
+		left: 85px
+		transform: skew(-20deg)
+		padding: 15px
+		font-weight: bold
+		span
+			transform: skew(20deg)
+			display: block
+			color: #fff
+			font-size: 16px
+			line-height: 16px
+			text-transform: uppercase
+/**** skidca-forma *****/
+.skidca-forma
+	.bg
+		background-repeat: no-repeat
+		background-size: 100%
+		background-position: center center
+		position: relative
+	.bg:before
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		background-color: rgba(0, 0, 0, 0.7)
+		content: ""
+	.box-timer
+		text-align: center
+		color: #fff
+		font-weight: bold
+		padding: 10px
+		background: rgba(0, 0, 0, 0.7)
+		max-width: 300px
+		.sm
+			font-size: 14px
+	.box-forma
+		padding: 15px
+		text-align: center
+		.title
+			font-size: 22px
+			font-weight: bold
+			text-transform: uppercase
+			color: #fff
+			div
+				background-color: red
+				padding: 0 3px	
+				transform: skew(-20deg)
+				display: inline-block
+				span
+					transform: skew(20deg)
+					display: block
+		form
+			padding: 10px 0
+			.form-group
+				margin-bottom: 0
+				input.user
+					background: url(../img/input-user.png)
+					background-size: 100% 100%
+				input.phone
+					background: url(../img/input-phone.png)
+					background-size: 100% 100%
+				input.mail
+					background: url(../img/input-mail.png)
+					background-size: 100% 100%
+				input
+					border: 0px
+					background-size: 100% 100%
+					outline: none
+					box-shadow: none
+					color: #fff
+					padding: 8px 31px 8px 14px
+					text-transform: uppercase
+					font-size: 13px
+					font-weight: bold
+				input::placeholder
+					color: #fff
+				button
+					transform: skew(-15deg)
+					span
+						transform: skew(15deg)
+						font-weight: bold
+		.sm
+			display: block
+			text-align: center
+			font-size: 12px
+			color: #909090
+			text-transform: uppercase
+			font-weight: bold
+
+/**** four-box ****/
+.four-box
+	.four-box-item
+		background-color: #999
+		padding: 30px 0
+		font-weight: bold
+		img
+			margin: auto
+		.title
+			font-size: 25px
+			line-height: 25px
+			color: #fff
+			text-transform: uppercase
+			padding-top: 20px
+
+		.descript
+			font-size: 13px
+			color: #fff
+			text-transform: uppercase
+	.four-box-ferst
+		background-color: #ff4d2b
+	.four-box-two
+		background-color: #99b546
+	.four-box-tri
+		background-color: #19a4c7
+	.four-box-four
+		background-color: #606060
+/***** shop *****/
+.shop
+	margin-top: 25px
+	margin-right: 55px
+	margin-left: 55px
+	.title-zagolovoc
+		font-size: 34px
+		text-transform: uppercase
+		padding-bottom: 25px
+		text-align: center
+		font-weight: bold
+		color: #000
+	.item, .item-title
+		padding-left: 10px
+		padding-right: 10px
+		padding-bottom: 10px
+	.item-title
+		.bg
+			background-color: #1aa3c6
+		.title
+			color: #fff
+			font-size: 27px
+			padding: 11px 0
+			line-height: 30px
+			text-transform: uppercase
+			font-weight: bold
+			text-align: center
+	.item
+		.border
+			border: 1px solid #333
+			text-align: center
+			.title
+				padding-top: 15px
+				font-size: 20px
+				text-transform: uppercase
+				font-weight: bold
+				color: #000
+			.cena
+				font-size: 22px
+				font-weight: bold
+				text-transform: uppercase
+				padding-bottom: 20px
+				line-height: 17px
+				color: #c72f2f
+				span
+					text-decoration: line-through
+					color: #8c8c8c
+					font-size: 17px
+			img
+				padding-bottom: 20px
+			.batons
+				overflow: hidden
+				div
+					width: 50%
+					text-align: center
+					overflow: hidden
+					float: left
+					.btn
+						border-radius: 0px
+						font-size: 12px
+						text-transform: uppercase
+						width: 100%
+						i
+							padding-left: 8px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
