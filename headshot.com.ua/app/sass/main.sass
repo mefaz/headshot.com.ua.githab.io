@@ -44,6 +44,8 @@ b, strong
 .col-left-box
 	max-width: 155px
 	background-color: red
+.container > .row
+	background-color: #fff
 
 .navvbar
 	max-height: 100px
@@ -69,8 +71,11 @@ b, strong
 			text-align: center
 			padding-right: 35px
 			padding-left: 35px
+			z-index: 1
 			a
 				color: #fff
+				z-index: 10
+				position: relative
 
 		.mail
 			position: relative
@@ -85,7 +90,7 @@ b, strong
 			right: 0
 			left: 0
 			background-color: #e8e8e8
-			z-index: -1
+			z-index: 2
 			transform: skew(-20deg)
 		.phone
 			position: relative
@@ -101,7 +106,7 @@ b, strong
 			right: 0
 			left: -20px
 			background-color: #19a4c7
-			z-index: -1
+			z-index: 2
 			transform: skew(-20deg)
 /**** baner ****/
 .baner
@@ -285,7 +290,9 @@ b, strong
 		padding-bottom: 10px
 	.item-title
 		.bg
-			background-color: #1aa3c6
+			width: 100%
+			background-position: center center
+			background-size: cover
 		.title
 			color: #fff
 			font-size: 27px
@@ -294,6 +301,8 @@ b, strong
 			text-transform: uppercase
 			font-weight: bold
 			text-align: center
+			background-color: #1aa3c6
+			width: 100%
 	.item
 		.border
 			border: 1px solid #333
