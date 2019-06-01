@@ -41,6 +41,7 @@ gulp.task('scripts', function() {
 		'app/libs/owl-carousel/owl-carousel.js',
 		'app/libs/magnific-popup/magnific-popup.min.js',
 		'app/libs/bootstrap/bootstrap.min.js',
+		'app/libs/fotorama/fotorama.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

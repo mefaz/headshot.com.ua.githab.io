@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<base href="https://mefaz.github.io/headshot.com.ua/app/">
+	<!--base href="https://mefaz.github.io/headshot.com.ua/app/"-->
 
 	<title>OptimizedHTML 4</title>
 	<meta name="description" content="">
@@ -22,21 +22,29 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
-	<link rel="stylesheet" href="css1/main.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
-<body style="background: url('img/bg-min.png');">
+<body style="background: url('img/bg-min.png');" >
 
 	<div class="container">
 		<div class="row no-gutters">
       <div class="col col-left-box">
-        <a href="/" class="logo"><img src="img/logo.png" class="img-resp" alt="logo"></a>
+        <div class="">
+          <a href="/" class="logo"><img src="img/logo.png" class="img-resp" alt="logo"></a>
+
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Пункт 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+          </div>
+
+        </div>
       </div>
 
-      <div class="col">
+      <div class="col-10 content scrollspy-example">
 
-        <div class="row no-gutters navvbar justify-content-between">
+        <div class="row no-gutters navvbar justify-content-between" id="list-item-1">
           <div class="col-auto left">
             <div class="row no-gutters align-items-center ">
               <div class="col-auto title">ПРОДАЖА Кепок</div>
@@ -49,7 +57,7 @@
                 <a href="mailto:www.headshot.com.ua@gmail.com">www.headshot.com.ua@gmail.com</a>
               </div>
               <div class="col-auto phone d-flex align-items-center justify-content-center">
-                <a href="">ЗАКАЖИТЕ ЗВОНОК</a>
+                <a href="" data-toggle="modal" data-target="#modalform">ЗАКАЖИТЕ ЗВОНОК</a>
               </div>
             </div>
           </div>
@@ -140,7 +148,7 @@
         </div>
 
         <!--- shop ---->
-        <div class="row no-gutters shop">
+        <div class="row no-gutters shop" id="list-item-2">
           <div class="col-12"><div class="title-zagolovoc">ЧТО МЫ ПРЕДЛАГАЕМ</div></div>
 
           <div class="col-4 item-title d-flex align-items-stretch">
@@ -157,7 +165,7 @@
               <div class="cena"><span>850</span> 765 ГРН</div>
               <img src="img/main (1).jpg" alt="" class="img-resp">
               <div class="batons">
-                <div class="ferst"><a href="" class="btn btn-primary">Подробнее<i class="fa fa-bars" aria-hidden="true"></i></a></div>
+                <div class="ferst"><a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalTovar">Подробнее<i class="fa fa-bars" aria-hidden="true"></i></a></div>
                 <div class="last"><a href="" class="btn btn-danger">заказать<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
               </div>
             </div>
@@ -213,6 +221,223 @@
 
         </div>
 
+        <!--- pocemu --->
+        <div class="row no-gutters pocemu">
+          <div class="col-12 box-title">
+            ПОЧЕМУ БОЛЕЕ 30 000 КЛИЕНТОВ ВЫБРАЛИ НАС?
+          </div>
+
+          <div class="col-4 item">
+            <div class="img">
+              <img src="img/block_bg1.jpg" alt="">
+              <span>ТОЛЬКО ОРИГИНАЛЬНАЯ ПРОДУКЦИЯ NIKE</span>
+            </div>
+          </div>
+
+          <div class="col-4 item">
+            <div class="img">
+              <img src="img/block_bg2.jpg" alt="">
+              <span>ДОСТАВКА НОВОЙ ПОЧТОЙ
+                <span>1-3 ДНЯ В ЛЮБОЙ РЕГИОН УКРАИНЫ</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-4 item">
+            <div class="img">
+              <img src="img/block_bg1.jpg" alt="">
+              <span>ТОЛЬКО ОРИГИНАЛЬНАЯ ПРОДУКЦИЯ NIKE</span>
+            </div>
+          </div>
+
+          <div class="col-4 item">
+            <div class="img">
+              <img src="img/block_bg2.jpg" alt="">
+              <span>ДОСТАВКА НОВОЙ ПОЧТОЙ
+                <span>1-3 ДНЯ В ЛЮБОЙ РЕГИОН УКРАИНЫ</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-4 item">
+            <div class="img">
+              <img src="img/block_bg1.jpg" alt="">
+              <span>ТОЛЬКО ОРИГИНАЛЬНАЯ ПРОДУКЦИЯ NIKE</span>
+            </div>
+          </div>
+
+          <div class="col-4 item">
+            <div class="img">
+              <img src="img/block_bg2.jpg" alt="">
+              <span>ДОСТАВКА НОВОЙ ПОЧТОЙ
+                <span>1-3 ДНЯ В ЛЮБОЙ РЕГИОН УКРАИНЫ</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!--- baner --->
+
+        <div class="row baner no-gutters">
+          <div class="col-12">
+            <img src="img/kepuli-na-baner-9.jpg" class="img-resp" alt="">
+          </div>
+        </div> 
+
+        <!--- skidca-forma ---->
+
+        <div class="row no-gutters skidca-forma">
+          <div class="col-12 bg" style="background-image: url(img/kepuli-na-baner-4.jpg);">
+            <div class="row no-gutters align-items-center">
+              <div class="col box-forma">
+                <div class="title">Оставьте заявку прямо сейчас, чтобы зафиксировать скидку</div>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-3">
+                      <input type="text" name="user_name" class="form-control user" placeholder="Ваше имя" title="Ваше имя">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <input type="text" name="user_phone" class="form-control phone" placeholder="Телефон" required="" title="Телефон">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <input type="text" name="user_mail" class="form-control mail" placeholder="Email" title="Email">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <button type="submit" class="btn btn-primary btn-block"><span>Отправить</span></button>
+                    </div>
+                  </div>
+                </form>
+                <span class="sm">МЫ ПЕРЕЗВОНИМ ВАМ В ТЕЧЕНИЕ 30 МИНУТ. ВАШИ ДАННЫЕ КОНФИДЕНЦИАЛЬНЫ</span>
+              </div>
+              <div class="col-auto box-timer">
+                <span>РАСПРОДАЖА ВЕСЕННЕ-ЛЕТНЕЙ КОЛЛЕКЦИИ</span>
+                <script src="//megatimer.ru/get/0aebb447b023255ed9dbb3549e8714c0.js"></script>
+                <span class="sm">до конца акчии осталось</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- shag -->
+        <style>
+          .shag .bg:before{background-image: url(img/hag.png), url(img/center-hag.png);}
+        </style>
+        <div class="row no-gutters shag">
+          <div class="col-12"><div class="title">РАБОТАТЬ С НАМИ ПРОСТО</div></div>
+          <div class="col-12 bg" style="background-image: url(img/kepul.jpg);">
+            <div class="ferst">ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ НА САЙТЕ</div>
+            <div class="tvo">МЫ ФОРМИРУЕМ ВАШ ЗАКАЗ</div>
+            <div class="trua">ДОСТАВЛЯЕМ ВАШУ ОБУВЬ</div>
+            <div class="catro">ВЫ ОПЛАЧИВАЕТЕ ЗАКАЗ ПРИ ПОЛУЧЕНИИ</div>
+          </div>
+        </div>
+
+        <!-- coment -->
+        <div class="row no-gutters coment" style="background-image: url(img/block_bg7.jpg);">
+          <div class="col-12"><div class="title">ЧТО ГОВОРЯТ О НАС КЛИЕНТЫ</div></div>
+          <div class="col-12 box-carusel">
+            <div class="owl-carousel owl-theme owl-carousel-coment">
+
+                <div class="item">
+                  <div class="bg-item">
+                    <div class="img"><img src="img/6.jpg" alt="" class="img-resp"></div>
+                    <div class="tile-item">
+                      <span></span>
+                      <span class="name"><i class="fa fa-comments" aria-hidden="true"></i>ЮЛИЯ СТЕЛЮК</span>
+                      <div class="disript">Хочу сказать спасибо за ваш сайт. Кроссовки порадовали меня очень. Буду у вас теперь всё заказывать. Особо благодарю менеджера и курьера, переживала где же мои кроссовочки( Вы умнички! Успехов вам, и процветания!! Всем всем хочу сказать, что не пожа</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="bg-item">
+                    <div class="img"><img src="img/2.jpg" alt="" class="img-resp"></div>
+                    <div class="tile-item">
+                      <span></span>
+                      <span class="name"><i class="fa fa-comments" aria-hidden="true"></i> АНДРЕЙ БОЦУЛ</span>
+                      <div class="disript">Покупаю здесь уже вторую пару кроссовок!Первые купил себе,проверить так сказать - оказалось обувь действительно фирменная,точно такая же как на полках в магазинах торговых центров.Поэтому уже без сомнений заказал еще и девушке кроссовки.Очень довольны покупками!</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="bg-item">
+                    <div class="img"><img src="img/6.jpg" alt="" class="img-resp"></div>
+                    <div class="tile-item">
+                      <span></span>
+                      <span class="name"><i class="fa fa-comments" aria-hidden="true"></i>ЮЛИЯ СТЕЛЮК</span>
+                      <div class="disript">Хочу сказать спасибо за ваш сайт. Кроссовки порадовали меня очень. Буду у вас теперь всё заказывать. Особо благодарю менеджера и курье</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="bg-item">
+                    <div class="img"><img src="img/2.jpg" alt="" class="img-resp"></div>
+                    <div class="tile-item">
+                      <span></span>
+                      <span class="name"><i class="fa fa-comments" aria-hidden="true"></i>ЮЛИЯ СТЕЛЮК</span>
+                      <div class="disript">Хочу сказать спасибо за ваш сайт. Кроссовки порадовали меня очень. Буду у вас теперь всё заказывать. Особо благодарю менеджера и курьера, переживала где же мои кроссовочки( Вы умнички! Успехов вам, и процветания!! Всем всем хочу сказать, что не пожалеете если приобретете на этом сайте кроссовки)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="bg-item">
+                    <div class="img"><img src="img/6.jpg" alt="" class="img-resp"></div>
+                    <div class="tile-item">
+                      <span></span>
+                      <span class="name"><i class="fa fa-comments" aria-hidden="true"></i>ЮЛИЯ СТЕЛЮК</span>
+                      <div class="disript">Хочу сказать спасибо за ваш сайт. Кроссовки порадовали меня очень. Буду у вас теперь всё заказывать. Особо благодарю менеджера и курьера, переживала где же мои кроссовочки( Вы умнички! Успехов вам, и процветания!! Всем всем хочу сказать, что не пожалеете если приобретете на этом сайте кроссовки)</div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--- skidca-forma ---->
+
+        <div class="row no-gutters skidca-forma">
+          <div class="col-12 bg" style="background-image: url(img/kepuli-na-baner-4.jpg);">
+            <div class="row no-gutters align-items-center">
+              <div class="col-auto box-timer">
+                <span>РАСПРОДАЖА ВЕСЕННЕ-ЛЕТНЕЙ КОЛЛЕКЦИИ СО СКИДКОЙ 10%</span>
+                <script src="//megatimer.ru/get/0aebb447b023255ed9dbb3549e8714c0.js"></script>
+                <span class="sm">до конца акчии осталось</span>
+              </div>
+              <div class="col box-forma">
+                <div class="title">Оставьте заявку и получите кроссовки со <div class=""><span>скидкой 10%</span></div></div>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-3">
+                      <input type="text" name="user_name" class="form-control user" placeholder="Ваше имя" title="Ваше имя">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <input type="text" name="user_phone" class="form-control phone" placeholder="Телефон" required="" title="Телефон">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <input type="text" name="user_mail" class="form-control mail" placeholder="Email" title="Email">
+                    </div>
+                    <div class="form-group col-md-3">
+                      <button type="submit" class="btn btn-primary btn-block"><span>Отправить</span></button>
+                    </div>
+                  </div>
+                </form>
+                <span class="sm">МЫ ПЕРЕЗВОНИМ ВАМ В ТЕЧЕНИЕ 30 МИНУТ. ВАШИ ДАННЫЕ КОНФИДЕНЦИАЛЬНЫ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row no-gutters copi">
+          <div class="col-12 text-center">© Все права защищены</div>
+        </div>
 
       </div>
     </div>
@@ -220,8 +445,71 @@
 
 
 
+      <div class="modal fade skidca-forma" id="modalform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-form modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body box-forma">
+
+                <span class="title">ЗАПОЛНИТЕ ФОРМУ И МЫ ВАМ НЕМЕДЛЕННО ПЕРЕЗВОНИМ</span>
+              
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <input type="text" name="user_name" class="form-control user" placeholder="Ваше имя" title="Ваше имя">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input type="text" name="user_phone" class="form-control phone" placeholder="Телефон" required="" title="Телефон">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <button type="submit" class="btn btn-primary btn-block"><span>Отправить</span></button>
+                    </div>
+                  </div>
+                </form>
+
+                <span class="sm">МЫ ПЕРЕЗВОНИМ ВАМ В ТЕЧЕНИЕ 30 МИНУТ. ВАШИ ДАННЫЕ КОНФИДЕНЦИАЛЬНЫ</span>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="modal fade skidca-forma" id="modalTovar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-form modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body box-forma">
+
+                <span class="title">ЗАПОЛНИТЕ ФОРМУ И МЫ ВАМ НЕМЕДЛЕННО ПЕРЕЗВОНИМ</span>
+              
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                      <input type="text" name="user_name" class="form-control user" placeholder="Ваше имя" title="Ваше имя">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <input type="text" name="user_phone" class="form-control phone" placeholder="Телефон" required="" title="Телефон">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <button type="submit" class="btn btn-primary btn-block"><span>Отправить</span></button>
+                    </div>
+                  </div>
+                </form>
+
+                <span class="sm">МЫ ПЕРЕЗВОНИМ ВАМ В ТЕЧЕНИЕ 30 МИНУТ. ВАШИ ДАННЫЕ КОНФИДЕНЦИАЛЬНЫ</span>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="fotorama" data-nav="thumbs" data-thumbheight="90" data-allowfullscreen="true" data-keyboard="true">
+  <img src="https://s.fotorama.io/1.jpg">
+  <img src="https://s.fotorama.io/2.jpg">
+</div>
 
 
   <hr>
@@ -303,12 +591,40 @@
      <div class="col-12">
 
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalform">
         Запустить модальное окно
       </button>
 
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong1">
+                Запустить модальное окно
+              </button>
       <!-- Modal -->
       <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+              <button type="button" class="btn btn-primary" data-toggle="modal1" data-target="#exampleModalLong1">
+                Запустить модальное окно
+              </button>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">

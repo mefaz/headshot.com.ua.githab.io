@@ -42,9 +42,8 @@ b, strong
 	$default-font: "CondProItalic", sans-serif
 
 .col-left-box
-	max-width: 155px
-	background-color: red
-.container > .row
+	background-color: transparent
+.container .content
 	background-color: #fff
 
 .navvbar
@@ -226,7 +225,7 @@ b, strong
 					outline: none
 					box-shadow: none
 					color: #fff
-					padding: 8px 31px 8px 14px
+					padding: 10px 31px 10px 14px
 					text-transform: uppercase
 					font-size: 13px
 					font-weight: bold
@@ -341,20 +340,201 @@ b, strong
 						i
 							padding-left: 8px
 
+/****pocemu****/
+.pocemu
+	background-color: #ff4d2c
+	padding: 15px 0
+	.box-title
+		padding-bottom: 15px
+		text-align: center
+		font-size: 35px
+		color: #fff
+		font-weight: bold
+	.item
+		.img
+			position: relative
+		.img>span
+			position: absolute
+			width: 100%
+			bottom: 10px
+			font-size: 19px
+			color: #fff
+			display: block
+			padding: 0 30px
+			text-align: center
+			font-weight: bold
+		.img>span>span
+			display: block
+			font-size: 13px
+/**** shag ****/
+.shag
+	.bg
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+		padding: 130px 0 450px
+	.bg:before
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		content: ""
+		background-repeat: no-repeat
+		background-position: center center
+	.bg>div
+		position: absolute
+		text-align: center
+		margin: auto
+		max-width: 195px
+		font-weight: bold
+		color: #19a4c7
+		font-size: 20px
+	.title
+		font-size: 35px
+		text-align: center
+		font-weight: bold
+		padding-top: 20px
+		color: #000
+		position: relative
+	.title:before
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		content: ""
+		background-color: #99b546
+		height: 5px
+		max-width: 130px
+		margin: auto
+	.ferst
+		position: absolute
+		top: 50px
+		left: 0
+		right: 0
+	.tvo
+		left: 635px
+		top: 250px
+	.trua
+		left: 0
+		right: 0
+		top: 470px
+	.catro
+		left: 105px
+		top: 250px
 
+/**** coment ***/
+.coment
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative
+	color: #000
+	padding-top: 20px
+	padding-bottom: 20px
+	&:before
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		content: ""
+		background-color: rgba(0, 0, 0, 0)
+	.title
+		text-align: center
+		font-size: 35px
+		text-transform: uppercase
+		font-weight: bold
+	.box-carusel
+		.owl-carousel
+			padding-left: 60px
+			padding-right: 60px
+		.item
+			padding: 90px 0 0 0
+		.bg-item
+			background-color: #fff
+			position: relative
+			min-height: 250px
+		.img
+			position: absolute
+			top: -60px
+			left: 0
+			right: 0
+			img
+				max-width: 120px
+				border-radius: 50%
+				margin: auto
+		.tile-item
+			padding: 70px 10px 10px 10px
+			.name
+				font-size: 14px
+				color: #ff4d2b
+				font-weight: bold
+				text-transform: uppercase
+				text-align: center
+				display: block
+				.fa
+					color: #000
+					padding-right: 6px
+			.disript
+				color: #464646
+				font-size: 13px
+				line-height: 17px
+				text-align: center
+		.owl-dots
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			margin: auto
+			span
+				width: 50px
+				height: 5px
+				background-color: #7e7e7e
+		.owl-dots .owl-dot.active span
+			background-color: #ff4d2b
+		.owl-dots .owl-dot:hover span
+			background-color: #ff4d2b
+		button
+			outline: none
+		button.owl-next
+			position: absolute
+			right: 15px
+			top: 50%
+			font-size: 30px
+		button.owl-prev
+			position: absolute
+			left: 15px
+			top: 50%
+			font-size: 30px
+		.owl-nav [class*=owl-]:hover
+			background-color: transparent
 
-
-
-
-
-
-
-
-
-
-
-
-
+.col-left-box > div
+	position: fixed
+	max-width: 153px
+	padding: 10px
+/****modal-form****/
+.modal-form
+	max-width: 600px
+	margin: auto
+	.modal-content
+		transform: skew(-15deg)
+	.modal-body
+		transform: skew(15deg)
+		padding: 15px 65px 15px 15px
+		.title
+			color: #000
+	button.close
+		position: absolute
+		right: -1px
+		top: 0
+		bottom: 0
+		background: red
+		transform: skew(-15deg)
+		width: 45px
+		opacity: 1
+		border-radius: 0 5px 5px 0
 
 
 
