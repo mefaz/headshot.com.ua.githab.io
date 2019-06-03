@@ -509,11 +509,36 @@ b, strong
 			font-size: 30px
 		.owl-nav [class*=owl-]:hover
 			background-color: transparent
-
+/****col-left-box***/
 .col-left-box > div
 	position: fixed
 	max-width: 153px
 	padding: 10px
+	z-index: 1
+.col-left-box
+	.list-group
+		margin: 0 -10px
+		.list-group-item:first-child
+			border-top: 1px solid #999
+		.list-group-item
+			background-color: transparent
+			border: none
+			border-bottom: 1px solid #999
+			border-radius: 0
+			font-weight: bold
+			text-transform: uppercase
+			color: #fff
+		.list-group-item.active
+			background-color: #f4d60b
+			color: #000
+.sm-on
+	display: none
+
+
+
+
+
+
 /****modal-form****/
 .modal-form
 	max-width: 600px
@@ -536,14 +561,146 @@ b, strong
 		opacity: 1
 		border-radius: 0 5px 5px 0
 
-
-
-
-
-
-
-
-
+/**** modal-form-tovar ****/
+.modal-form-tovar
+	max-width: 800px
+	.tovar-box-modal
+		.title
+			font-size: 33px
+			text-transform: uppercase
+			font-weight: bold
+			line-height: 35px
+			color: #000
+		.article
+			font-size: 10px
+			line-height: 12px
+			font-family: Arial
+			font-style: italic
+			padding-bottom: 15px
+		.descript
+			font-family: Arial
+			font-size: 12px
+			padding-bottom: 15px
+		.xaracteristic
+			font-family: Arial
+			font-size: 12px
+			list-style-type: none
+			margin: 0
+			padding: 0
+		.cena
+			padding: 10px
+			color: #c72f2f
+			font-weight: bold
+			font-size: 25px
+			border-top: 1px solid #999
+			border-bottom: 1px solid #999
+			margin-top: 15px
+			margin-bottom: 15px
+			.stara
+				color: #8c8c8c
+				display: inline-block
+				text-decoration: line-through
+				margin-right: 10px
+				font-weight: 100
+		.razmer
+			font-family: Arial
+			font-size: 10px
+			text-transform: uppercase
+		.razmer-ul
+			list-style-type: none
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				a
+					color: #000
+					display: block
+					text-decoration: none
+					padding: 5px
+					background-color: rgb(228, 228, 228)
+					padding: 0px 8px
+			li.activ
+				a
+					color: #fff
+					background-color: rgb(155, 204, 44)
+		.form-border
+			padding: 10px 30px
+			border: 5px solid #c72f2f
+			margin-top: 20px
+			text-align: center
+			.title-form
+				font-size: 22px
+				display: block
+				font-weight: bold
+				text-transform: uppercase
+				color: #000
+			.pre-title-form
+				display: block
+				font-family: Arial
+				font-size: 10px
+				text-transform: uppercase
+				font-style: italic
+				padding-bottom: 5px
+				color: #000
+			form
+				input
+					text-align: center
+					background: rgb(228, 228, 228)
+					color: #000!important
+				input::placeholder
+					color: #000
+	.modal-header
+		padding: 0
+		background-color: #007590
+		min-height: 62px
+		.item
+			.img
+				padding-left: 5px
+				padding-right: 5px
+		.content
+			font-size: 13px
+			color: #fff
+			text-transform: uppercase
+			font-weight: bold
+			padding-left: 5px
+			padding-right: 5px
+			line-height: 13px
+		.item-btn
+			background-color: #ff4242
+			button
+				padding: 0
+				margin: 0
+				opacity: 1
+				span
+					line-height: 29px
+					font-size: 29px
+					display: block
+					font-family: Arial
+					color: #fff
+	.modal-header>.row
+		margin: 0
+		width: 100%
+.pre-footer
+	.item-wrap
+		position: relative
+		.item-info
+			position: absolute
+			bottom: 20px
+			left: 20px
+			.title
+				margin-bottom: 5px
+				a
+					color: #fff
+					background-color: #000
+					display: block
+					padding: 0 8px
+					flex: 16px
+					text-transform: uppercase
+					font-weight: bold
+		.instagram
+			left: initial
+			right: 20px
+			text-align: right
 
 
 
