@@ -25,7 +25,7 @@ body
 		&:required:valid
 			border-color: green
 
-.img-responsive
+.img-res
 	display: block
 	max-width: 100%
 	height: auto
@@ -34,9 +34,64 @@ body
 
 .text-center
 	text-align: center
-
+a
+	color: #ea5e36
 b, strong
 	font-weight: bold
+.color-activ
+	color: #ea5e36
+#video-bg
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	overflow: hidden
+	z-index: 1
+	background: url(/img/640x360.jpg) no-repeat #000
+	background-size: cover
+#video-bg > video
+	position: absolute
+	top: 0
+	left: 0
+	min-width: 100%
+	min-height: 100%
+	width: auto
+	height: auto
+.container, .container-fluid
+	position: relative
+	z-index: 100
+	color: #fff
+.navbar-brand
+	text-transform: uppercase
+	color: #fff
+	font-weight: bold
+	img
+		max-width: 60px
+.navbar
+	.navbar-toggler
+		.fa
+			color: #fff
+	.navbar-text
+		text-align: right
+		.phone	
+			display: block
+			font-weight: bold
+			text-transform: uppercase
+			font-size: 30px
+			line-height: 30px
+			color: #fff
+		.addr
+			text-transform: uppercase
+			font-size: 13px
+			color: #fff
+	.navbar-nav
+		margin: auto
+		.nav-link
+			text-transform: uppercase
+			color: #fff
+			font-size: 16px
+			font-weight: bold
 
 
 
