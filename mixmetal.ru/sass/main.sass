@@ -48,7 +48,7 @@ b, strong
 	left: 0
 	overflow: hidden
 	z-index: 1
-	background: url(/img/640x360.jpg) no-repeat #000
+	background: url('../img/640x360.jpg') no-repeat #000
 	background-size: cover
 #video-bg > video
 	position: absolute
@@ -92,6 +92,148 @@ b, strong
 			color: #fff
 			font-size: 16px
 			font-weight: bold
+/*top-banner*/
+.top-banner
+	.banner-box
+		padding: 30px 0
+		.title
+			font-size: 26px
+			text-transform: uppercase
+			font-weight: bold
+		.descript
+			font-size: 20px
+			text-transform: uppercase
+		.pretittle
+			font-size: 26px
+			text-transform: uppercase
+			font-weight: bold
+/*box-item*/
+.box-item
+	padding-top: 40px
+	.img-box
+		.imgbg
+			position: relative
+		.imgbg:before
+			content: ''
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			z-index: 10
+			background-color: rgba(0, 0, 0, 0.5)
+			transition: all .5s ease-in
+		.coment-text
+			font-family: "RadioVolnaRegular", sans-serif
+			font-size: 29px
+	.content-box
+		position: absolute
+		background-color: #131313
+		padding: 40px
+		& > div
+			z-index: 100
+			position: relative
+		.title
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 28px
+			line-height: 30px
+		.descript
+			padding-top: 20px
+			font-size: 16px
+		.pretittle
+			padding-top: 20px
+	.content-box:after
+		content: ''
+		position: absolute
+		left: 0
+		right: 20px
+		top: 0
+		bottom: 20px
+		z-index: 10
+		background-size: 75px
+		background-repeat: no-repeat
+		background-position: right bottom
+.box-item:hover .img-box
+	.imgbg:before
+		background-color: rgba(0, 0, 0, 0)
+.box-item.box-left
+	.content-box
+		right: 0
+		bottom: 0
+.box-item.box-right
+	.content-box
+		z-index: 12
+		left: 0
+		bottom: 0
+	.coment-text
+		text-align: right
+.pocemu
+	z-index: 100
+	position: relative
+	margin-top: 30px
+	padding-top: 30px
+	padding-bottom: 30px
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: rgba(0, 0, 0, 0.85)
+	.h2
+		text-transform: uppercase
+		text-align: center
+		font-weight: bold
+		font-size: 30px
+		color: #ea5e36
+	.aflert-h2
+		text-align: center
+		max-width: 80%
+		margin: auto
+		padding-bottom: 30px
+		b
+			color: #ea5e36
+	.item
+		.imgbg
+		.title
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 22px
+			text-align: center
+			padding-top: 10px
+			color: #ea5e36
+
+
+
+
+
+.btn-primary
+	background-color: #ea5e36
+	border: 1px solid #ea5e36
+	color: #fff
+	text-transform: uppercase
+.btn-primary:focus, .btn-primary:hover
+	background-color: transparent
+	color: #ea5e36
+	border: 1px solid #ea5e36
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
