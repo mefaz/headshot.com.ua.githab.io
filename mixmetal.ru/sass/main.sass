@@ -66,6 +66,8 @@ b, strong
 	text-transform: uppercase
 	color: #fff
 	font-weight: bold
+	&:hover
+		color: #fff
 	img
 		max-width: 60px
 .navbar
@@ -81,6 +83,9 @@ b, strong
 			font-size: 30px
 			line-height: 30px
 			color: #fff
+			a:hover
+				color: #ea5e36
+				text-decoration: none
 		.addr
 			text-transform: uppercase
 			font-size: 13px
@@ -92,6 +97,10 @@ b, strong
 			color: #fff
 			font-size: 16px
 			font-weight: bold
+			border: 1px solid transparent
+			&:hover
+				color: #ea5e36
+				border-bottom: 1px solid #ea5e36
 /*top-banner*/
 .top-banner
 	.banner-box
@@ -208,16 +217,124 @@ b, strong
 			padding-top: 10px
 			color: #ea5e36
 
-
-
-
-
+.countTo
+	z-index: 100
+	position: relative
+	margin-top: 30px
+	padding-top: 30px
+	padding-bottom: 30px
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: rgba(0, 0, 0, 0.85)
+	.cout-hq
+		font-size: 35px
+		text-align: center
+		font-weight: bold
+		color: #ea5e36
+	.title
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 22px
+		text-align: center
+		padding-top: 10px
+.otziv
+	z-index: 100
+	position: relative
+	padding-top: 30px
+	padding-bottom: 30px
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-color: rgba(0, 0, 0, 0.85)
+	h2
+		text-transform: uppercase
+		text-align: center
+		font-weight: 700
+		font-size: 30px
+		color: #ea5e36
+	.owl-item
+		min-height: 370px
+	.item
+		position: relative
+		padding: 10px
+		min-height: 370px
+		&:before
+			content: ''
+			position: absolute
+			right: 0
+			top: 30px
+			bottom: 30px
+			width: 1px
+			background-color: #ea5e36
+		.img
+			img
+				max-width: 50%
+				border: 1px solid #ea5e36
+		.title
+			font-size: 18px
+			color: #ea5e36
+			text-transform: uppercase
+			font-weight: bold
+			span
+				text-transform: none
+				font-size: 14px
+		.descript
+			color: #fff
+			font-size: 14px
+.contact
+	.title
+		font-size: 20px
+		color: #ea5e36
+		text-transform: uppercase
+		font-weight: bold
+	.descript
+		color: #fff
+		font-size: 14px
+		a
+			color: #fff
+			font-size: 16px
+			text-transform: uppercase
+			&:hover
+				color: #ea5e36
+.bot-menu
+	a
+		display: inline-block
+		font-size: 18px
+		font-weight: bold
+		border-bottom: 1px solid transparent
+		color: #ea5e36
+		&:hover
+			color: #ea5e36
+			text-decoration: none
+			border-bottom: 1px solid #ea5e36
+	.navbar-brand
+		color: #fff
+		&:hover
+			text-decoration: none
+			color: #fff
+			border-bottom: 1px solid transparent
+			
 .btn-primary
 	background-color: #ea5e36
 	border: 1px solid #ea5e36
 	color: #fff
 	text-transform: uppercase
-.btn-primary:focus, .btn-primary:hover
+.btn-primary:focus, .btn-primary:hover 
 	background-color: transparent
 	color: #ea5e36
 	border: 1px solid #ea5e36
