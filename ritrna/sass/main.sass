@@ -1,0 +1,496 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #fff
+
+::selection
+	background-color: $col-a
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 13px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Open Sans', sans-serif
+	overflow-x: hidden
+	color: $text
+// Custom Sass / Remove before use
+.img-res
+	display: block
+	max-width: 100%
+	height: auto
+.bg
+	background-color: red
+.col-a
+	color: $col-a
+a
+	text-decoration: none
+	transition: all .3s
+	&:hover
+		text-decoration: none
+.form-grup input,.form-grup input:hover,.form-grup input:focus
+	outline: 0
+	box-shadow: none
+	background-color: transparent
+.btn-defolt
+	color: #000
+	font-size: 14px
+	background-color: $col-a
+	width: 100%
+	text-align: center
+	text-transform: uppercase
+	font-weight: bold
+.tra-all
+	transition: all .3s
+p
+	font-size: 13px
+	line-height: 22px
+	margin: 0 0 20px
+ul
+	padding: 0
+	margin: 0
+li
+	list-style-type: none
+	font-size: 13px
+	padding: 0 0 10px 10px
+//heder
+.heder
+	background: rgba(0,0,0,0.4)
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+	.menu-box
+		ul
+			margin: 0
+			padding: 0
+			li
+				list-style-type: none
+				display: inline-block
+				padding: 0 15px
+				position: relative
+				transition: all .3s
+				&:before
+					content: ''
+					position: absolute
+					height: 0
+					background-color: $col-a
+					left: 0
+					right: 0
+					bottom: -22px
+					transition: all .3s
+					border-radius: 10px
+				a
+					color: #fff
+					font-weight: bold
+					text-transform: uppercase
+					font-size: 13px
+					&:hover
+						color: $col-a
+			li.activ
+				&:before
+					content: ''
+					position: absolute
+					height: 3px
+					background-color: $col-a
+					left: 0
+					right: 0
+					bottom: -22px
+				a
+					color: $col-a
+			li:hover
+				&:before
+					content: ''
+					position: absolute
+					height: 3px
+					background-color: $col-a
+					left: 0
+					right: 0
+					bottom: -22px
+//baner
+.baner
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	&:before
+		background-color: rgba(0, 0, 0, 0.4)
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+	.container
+		.row
+			height: 700px
+			position: relative
+	.text-box
+		position: relative
+		margin-left: 20px
+		&:before
+			content: ''
+			position: absolute
+			top: 8px
+			bottom: 8px
+			left: 0
+			width: 8px
+			background-color: $col-a
+		.ferst
+			font-size: 34px
+			color: #fff
+			font-weight: bold
+			text-transform: uppercase
+			line-height: 50px
+			padding-left: 10px
+		.Tvo
+			color: $col-a
+			font-size: 50px
+			font-weight: bold
+			text-transform: uppercase
+			line-height: 50px
+			padding-left: 10px
+		.last
+			font-size: 34px
+			color: #fff
+			font-weight: bold
+			text-transform: uppercase
+			line-height: 50px
+			padding-left: 10px
+	.form-baner
+		background: rgba(0,0,0,0.4)
+		position: absolute
+		right: 20px
+		width: 350px
+		top: 71px
+		bottom: 0
+		form
+			width: 100%
+			padding: 0 50px
+		.title    
+			color: #ffd900
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 22px
+			line-height: 26px
+		.subtitle
+			color: white
+			text-transform: uppercase
+			font-size: 16px
+			line-height: 10px
+			padding-top: 5px
+		.title-bottom-form
+			font-size: 12px
+			text-align: center
+			line-height: 14px
+			color: #fff
+			padding: 30px 0 20px
+			span
+				display: block
+		.subtitle-botom-form-phone
+			a
+				text-align: center
+				font-weight: bold
+				color: #ffd900
+				font-size: 17px
+				line-height: 23px
+		.form-grup
+			position: relative
+			padding-bottom: 10px
+			.img-ico-form-baner
+				position: absolute
+				left: 3px
+				top: 13px
+				max-width: 12px
+			input
+				background-color: transparent
+				border: 0px
+				padding-left: 20px
+				border-bottom: 1px solid #fff
+				border-radius: 0px
+				color: #fff
+				box-shadow: none
+			input:focus
+				box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6)
+			input::placeholder
+				color: #fff
+	.owl-carousel-baner
+		.item
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			position: relative
+		.form-baner
+		.owl-dots
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 10px
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					margin: 0 5px
+					border-radius: 0
+					background: #fff
+					border: 0
+					height: 5px
+					width: 45px
+					&:focus
+						outline: none
+					&:hover
+						background-color: $col-a
+			.owl-dot.active
+				span
+					background-color: $col-a
+//main-naw
+.main-naw
+	background-color: #eee
+	.item
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		padding: 15px
+		padding-left: 20px
+		padding-top: 20px
+		min-height: 200px
+		margin-bottom: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(0,0,0,0.6)
+		.box-hr
+			position: relative
+			padding-left: 15px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 4px
+				height: 30px
+				background-color: $col-a
+				transition: all .7s
+			a
+				font-size: 14px
+				font-weight: bold
+				color: #fff
+				text-transform: uppercase
+				text-decoration: none
+				&:hover
+					color: $col-a
+			a.mine-h1
+				text-transform: uppercase
+				font-size: 18px
+				margin: 0
+				color: $col-a
+				font-weight: 700
+				&:hover
+					text-decoration: none
+			p
+				font-size: 14px
+				font-weight: bold
+				color: #fff
+				text-transform: uppercase
+				text-decoration: none
+				margin: 0
+			&:hover
+				&:before
+					bottom: 0
+					height: 100%
+//.content-box
+.text-center
+	.zagolovoc
+		padding-bottom: 20px
+		margin-bottom: 20px
+		padding-left: 20px
+		padding-right: 20px
+		border-bottom: 1px #e2e2e2 solid
+		display: inline-block
+		h1
+			font-size: 20px
+			text-transform: uppercase
+			font-weight: bold
+			position: relative
+			&:before
+				content: ''
+				height: 5px
+				width: 70px
+				position: absolute
+				background-color: #ffd900
+				left: 0
+				right: 0
+				bottom: -24px
+				margin-right: auto
+				margin-left: auto
+		h2
+			font-size: 20px
+			text-transform: uppercase
+			font-weight: bold
+			position: relative
+			&:before
+				content: ''
+				height: 5px
+				width: 70px
+				position: absolute
+				background-color: #ffd900
+				left: 0
+				right: 0
+				bottom: -24px
+				margin-right: auto
+				margin-left: auto
+.zagolovoc
+	padding-bottom: 20px
+	margin-bottom: 20px
+	padding-right: 20px
+	border-bottom: 1px #e2e2e2 solid
+	display: inline-block
+	h1
+		font-size: 20px
+		text-transform: uppercase
+		font-weight: bold
+		position: relative
+		&:before
+			content: ''
+			height: 5px
+			width: 70px
+			position: absolute
+			background-color: #ffd900
+			left: 45px
+			right: 0
+			bottom: -23px
+	h2
+		font-size: 20px
+		text-transform: uppercase
+		font-weight: bold
+		position: relative
+		&:before
+			content: ''
+			height: 5px
+			width: 70px
+			position: absolute
+			background-color: #ffd900
+			left: 45px
+			right: 0
+			bottom: -23px
+.content-box
+	ul
+		li
+			&:before
+				content: "\f00c"
+				color: $col-a
+				position: relative
+				top: 2px
+				display: inline-block
+				margin-right: 10px
+				font-family: FontAwesome
+//blasc-lovuh
+.blasc-lovuh
+	background-color: #222
+	.ferst
+		font-size: 35px
+		font-weight: bold
+		text-transform: uppercase
+		color: $col-a
+	.last
+		color: #fff
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 20px
+	form
+		.form-grup
+			input
+				background-color: #fff
+				color: #333
+				height: 100%
+//box-galeri
+.box-galeri
+	background-color: #eee
+	.gallerymagnificPopup
+		margin-left: -5px
+		margin-right: -5px
+	.item
+		position: relative
+		margin-bottom: 10px
+		padding-left: 5px
+		padding-right: 5px
+		&:before
+			content: ''
+			position: absolute
+			left: 10px
+			right: 10px
+			top: 0
+			bottom: 0
+			z-index: 1
+			background-color: rgba(0,0,0,0)
+			transition: all .3s
+		span
+			position: absolute
+			top: 30%
+			left: 25px 
+			color: #fff
+			opacity: 0
+			transition: all .3s
+			z-index: 10
+			font-weight: bold
+	.item:hover
+		&:before
+			content: ''
+			position: absolute
+			left: 5px
+			right: 5px
+			top: 0
+			bottom: 0
+			z-index: 1
+			background-color: rgba(0,0,0,0.75)
+		span
+			opacity: 1
+			top: 47%
+
+
+
+
+
+
+
+
+
+
+
+
+
+.example-grid
+	display: grid
+	grid-gap: $gutter
+	grid-template-columns: 1fr 1fr
+	grid-template-areas: "left right"
+	> div:first-child
+		grid-area: left
+	> div:last-child
+		grid-area: right
+	+media-breakpoint-down(xs)
+		display: block
+		> div
+			padding: $gutter/2 0
+
+.example-img
+	width: 100%
+
+.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
+	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
