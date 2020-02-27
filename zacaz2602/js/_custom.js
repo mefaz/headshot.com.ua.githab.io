@@ -15,13 +15,22 @@ var innerWidthActiv = $('.box-2 .owl-carousel .owl-item.center .item').innerWidt
 
 		$('.box-2 .owl-carousel .item .box-img img').innerWidth(innerWidth / 3);
 
-$('.owl-carousel').on('dragged.owl.carousel', function(event) {
+$('.owl-carousel').on('drag.owl.carousel', function(event) {
 		var innerWidthActiv = $('.box-2 .owl-carousel .owl-item.center .item').innerWidth(),
 				innerWidth = $('.box-2 .owl-carousel .owl-item .item').innerWidth();
 		console.log(innerWidthActiv);
 		console.log(innerWidth);
 		$('.box-2 .owl-carousel .owl-item .item').innerHeight(innerWidth-25);
-		$('.box-2 .owl-carousel .owl-item.active.center .item').innerHeight(innerWidthActiv);
+		$('.box-2 .owl-carousel .owl-item.active.center .item').innerHeight(innerWidth);
+})
+
+$('.owl-carousel').on('translated.owl.carousel', function(event) {
+		var innerWidthActiv = $('.box-2 .owl-carousel .owl-item.center .item').innerWidth(),
+				innerWidth = $('.box-2 .owl-carousel .owl-item .item').innerWidth();
+		console.log(innerWidthActiv);
+		console.log(innerWidth);
+		$('.box-2 .owl-carousel .owl-item .item').innerHeight(innerWidth-25);
+		$('.box-2 .owl-carousel .owl-item.active.center .item').innerHeight(innerWidth);
 })
 
 var itemWidthActiv = $('.box-2 .box-item .item').innerWidth();
