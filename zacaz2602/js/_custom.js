@@ -28,6 +28,10 @@ var itemWidthActiv = $('.box-2 .box-item .item').innerWidth();
 		$('.box-2 .box-item .item').innerHeight(itemWidthActiv);
 		$('.box-2 .box-item .item .box-img').innerWidth(itemWidthActiv - 50);
 
+var itemWidthActivs = $('.box-2 .left .box').innerWidth();
+		$('.box-2 .left .box .box-img').innerWidth(itemWidthActivs);
+		$('.box-2 .left .box .box-img img').innerWidth(itemWidthActivs - 70);
+
 
 
 });
