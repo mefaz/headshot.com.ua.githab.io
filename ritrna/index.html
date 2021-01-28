@@ -1,422 +1,718 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<base href="https://mefaz.github.io/ritrna/">
-	<meta charset="utf-8">
-	<title>OptimizedHTML 5</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="img/favicon.png">
-	<meta property="og:image" content="img/@1x/preview.jpg">
-	<link rel="stylesheet" href="css/styles.min.css">
-</head>
-<body>
-	<div class="" id="page">
+<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="" id="page">
 
-		<div class="heder">
-			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-auto img-logo"><a href="/" class="logo"><img src="img/logo_r.png" alt="" class="img-res"></a></div>
-					<div class="col-auto menu-box">
-						<ul class="">
-							<li class="activ"><a class="" href="/">Главная</a></li>
-							<li><a class="" href="/produktsiya">Продукция</a></li>
-							<li><a class="" href="/servis">Сервис</a></li>
-							<li><a class="" href="/nashi-raboty">Наши работы</a></li>
-							<li><a class="" href="/articles">Статьи</a></li>
-							<li><a class="" href="/contacts">Контакты </a></li>
-						</ul>
+
+	<div class="heder">
+		<div class="container">
+			<div class="row align-items-center ">
+				<div class="col-2 img-logo">
+					<a href="/" class="logo">
+						<img src="/images/dist/logo_r.png"
+						alt="Автоматические ворота Ryterna Premium. - Завод ворот Ритерна" class="img-res" 
+						title="Автоматические ворота Ryterna Premium. https://ryterna.com.ua/">
+					</a>
+				</div>
+				<div class="col-6 menu-box">
+					<ul class="d-none d-lg-block">
+						<li class="activ"><a href="produktsiya/">Продукция</a></li>
+						<li><a href="salony-po-ukraine/">Салоны</a></li>
+						<li><a href="servis/">Сервис</a></li>
+						<li><a href="nashi-raboty/">Наши работы</a></li>
+						<li><a href="articles/">Статьи</a></li>
+						<li class="last"><a href="contacts">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-4 adres-phone">
+					<div class="row align-items-center">
+						<div class="col-6"><div class="adres">Киев, ул. Паисия Кайсарова 7</div></div>
+						<div class="col-6"><div class="phone">
+							<p><a href="" class="tel">050 390 01 01</a></p>
+							<p><a href="" class="tel">067 696 01 01</a></p>
+						</div></div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<!--- baner --->
+	<div class="baner fon-bg" style="background-image: url('images/dist/baner.png');">
+		<div class="container">
+			<div class="row ban-box-row align-items-center">
+				<div class="col-7">
+					<div class="title">Фирменный салон гаражных ворот</div>
+					<div class="pre_title"><div class="">RYTERNA</div></div>
+				</div>
+				<div class="col-5 box-form-baner">
+					<div class="form-baner d-none d-md-flex align-items-center"> 
 
-		<!--- baner --->
-
-		<div class="baner" style="background-image: url(https://ryterna.com.ua/images/Slider-5.jpg);">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-6 text-box">
-						<div class="ferst">ФИРМЕННЫЙ САЛОН</div>
-						<div class="Tvo">ГАРАЖНЫХ ВОРОТ</div>
-						<div class="last">RYTERNA</div>
-					</div>	
-					<div class="col-6 form-baner d-flex align-items-center">
-						<form method="" action="" style="" class="mainform">
-							<input type="text" name="admin_email" class="form-control user d-none" value="ks@ryterna.com.ua">
-							<input type="text" name="project_name" class="form-control user d-none" value="Ловушка номер 1">
-							<input type="text" name="form_subject" class="form-control user d-none" value="Ryterna.com.ua - Форма номер 1">
-							<input type="text" name="Страница сайта" class="form-control user d-none" value="https://ryterna.com.ua/produktsiya">
-
-							<div class="title">Оставте заявку</div>
-							<div class="subtitle">на расчет стоимости</div>
-							<div class="form-grup mt-25">
-								<img src="img/ico-form-banner_2.png" class="img-ico-form-baner img-res">
-								<input name="Ширина" type="text" class="form-control" placeholder="Ширина, м">
-							</div>
+						<form method="" action="" style="" class="mainform"> 
+							<input type="text" name="admin_email" class="form-control user d-none" value=""> 
+							<input type="text" name="project_name" class="form-control user d-none" value=""> 
+							<input type="text" name="form_subject" class="form-control user d-none" value=""> 
+							<input type="text" name="Страница сайта" class="form-control user d-none" value="">
+							<div class="form-title">Оставте заявку</div> 
+							<div class="form-subtitle">на расчет стоимости</div> 
+							<div class="form-grup pt-45">
+								<label for="">Введите ширину (м):</label>
+								<div class="box-ico width">
+									<input name="Ширина" type="text" class="form-control" placeholder="Ширина, м">
+								</div>
+							</div> 
 							<div class="form-grup">
-								<img src="img/ico-form-banner_3.png" class="img-ico-form-baner img-res">
-								<input name="Высота" type="text" class="form-control" placeholder="Высота, м">
-							</div>
+								<label for="">Введите высоту (М):</label>
+								<div class="box-ico height">
+									<input name="Высота" type="text" class="form-control" placeholder="Высота, м">
+								</div>
+							</div> 
 							<div class="form-grup">
-								<img src="img/ico-form-banner_1.png" class="img-ico-form-baner img-res">
-								<input name="Телефон" type="phone" class="form-control" placeholder="+38(0__) ___-__-__">
-							</div>
-							<div class="">
+								<label for="">Введите ваш телефон:</label>
+								<div class="box-ico phone">
+									<input name="Телефон" type="tel" class="form-control" placeholder="+38(0__) ___-__-__">
+								</div>
+							</div> 
+							<div class="form-grup form-grup-submit pb-45"> 
 								<input name="submit" type="submit" value="Заказать расчет" class="btn btn-defolt">
-							</div>
-
-							<div class="title-bottom-form">или<span>позвонить менеджеру</span></div>
-							<div class="subtitle-botom-form-phone d-flex flex-column">
-								<a href="tel:+380503900101">050 390 01 01</a>
+							</div> 
+							<div class="title-bottom-form pb-20">Или позвоните нам:</div> 
+							<div class="subtitle-botom-form-phone">
+								<a href="tel:+380503900101">050 390 01 01</a>;
 								<a href="tel:+380676960101">067 696 01 01</a>
 							</div>
 						</form>
-					</div>	
+
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<!--main-naw-->
+	<div class="main-naw">
+		<div class="container">
+			<div class="row">
 
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_01" style="">
+						<div class="box-hr d-flex flex-column">
+							<a class="mine-h1" href="/produktsiya/sektsionnye-vorota">СЕКЦИОННЫЕ ВОРОТА</a>
+							<a class="mine-h2" href="/produktsiya/garazhnye-vorota">Гаражные ворота</a>
+							<a class="mine-h2" href="/produktsiya/bokovye-vorota">Боковые ворота</a>
+							<a class="mine-h2" href="/produktsiya/promyshlennye-vorota">Промышленные ворота</a>
+							<a class="mine-h2" href="[[~393]]">Ангарные ворота</a>
+							<a class="mine-h2" href="/produktsiya/panoramnye-vorota">Панорамные ворота</a>
+						</div>
+					</div>
+				</div>
 
-		<div class="baner ">
-			<div class="owl-carousel owl-theme owl-carousel-baner">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_02" style="">
+						<div class="box-hr d-flex flex-column">
+							<a class="mine-h1" href="/produktsiya/ulichnye-vezdnye-vorota">УЛИЧНЫЕ ВОРОТА</a>
+							<a class="mine-h2" href="/produktsiya/otkatnye-vorota">Откатные ворота</a>
+							<a class="mine-h2" href="/produktsiya/raspashnye-vorota">Распашные ворота</a>
+							<p class="mine-h2" href="/">Кованные ворота</p>
+							<p class="mine-h2" href="/">Фурнитура к воротам</p>
+						</div>
+					</div>
+				</div>
 
-				<div class="item" style="background-image: url(https://ryterna.com.ua/images/ryt_4.jpg);">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-6 text-box">
-								<div class="ferst">ФИРМЕННЫЙ САЛОН</div>
-								<div class="Tvo">ГАРАЖНЫХ ВОРОТ</div>
-								<div class="last">RYTERNA</div>
-							</div>	
-							<div class="col-6 form-baner d-flex align-items-center">
-								<form method="" action="" style="" class="mainform">
-									<input type="text" name="admin_email" class="form-control user d-none" value="ks@ryterna.com.ua">
-									<input type="text" name="project_name" class="form-control user d-none" value="Ловушка номер 1">
-									<input type="text" name="form_subject" class="form-control user d-none" value="Ryterna.com.ua - Форма номер 1">
-									<input type="text" name="Страница сайта" class="form-control user d-none" value="https://ryterna.com.ua/produktsiya">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_03" style="">
+						<div class="box-hr d-flex flex-column">
+							<a class="mine-h1" href="/produktsiya/avtomatika-dlya-vorot">АВТОМАТИКА ДЛЯ ВОРОТ</a>
+							<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-sektsionnykh-vorot">Секционная автоматика</a>
+							<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-raspashnykh-vorot">Распашная автоматика</a>
+							<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-otkatnykh-vorot">Откатная автоматика</a>
+							<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-promyshlennykh-vorot">ПРОМЫШЛЕННая автоматика</a>
+							<p class="mine-h2" href="/">Аксесуары к автоматики</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_04" style="">
+						<div class="box-hr d-flex flex-column">
+							<p class="mine-h1" href="/">ДВЕРИ</p>
+							<a class="mine-h2" href="/produktsiya/premium-dveri">Премиум двери Ryterna</a>
+							<p class="mine-h2" href="/">Бытовые двери</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_05" style="">
+						<div class="box-hr d-flex flex-column">
+							<a class="mine-h1" href="/produktsiya/avtomaticheskie-dveri">АВТОМАТИЧЕСКИЕ ДВЕРИ</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_06" style="">
+						<div class="box-hr d-flex flex-column">
+							<a class="mine-h1" href="/produktsiya/modulnye-zdaniya">МОДУЛЬНЫЕ ЗДАНИЯ</a>
+						</div>
+					</div>
+				</div>
 
-									<div class="title">Оставте заявку</div>
-									<div class="subtitle">на расчет стоимости</div>
-									<div class="form-grup mt-25">
-										<img src="img/ico-form-banner_2.png" class="img-ico-form-baner img-res">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_07" style="">
+						<div class="box-hr d-flex flex-column">
+							<p class="mine-h1" href="/produktsiya/modulnye-zdaniya">Перегрузочное оборудование</p>
+							<a class="mine-h2" href="[[~270]]">Герметизаторы проема (докшелтеры)</a>
+							<a class="mine-h2" href="[[~271]]">Уравнительные платформы (доклевеллеры)</a>
+							<a class="mine-h2" href="[[~274]]">Ножничные подъемные столы</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_08" style="">
+						<div class="box-hr d-flex flex-column">
+							<a class="mine-h1" href="[[~275]]">Противопожарные ворота</a>
+							<a class="mine-h2" href="[[~276]]">Противопожарные двери</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item item_09" style="">
+						<div class="box-hr d-flex flex-column">
+							<p class="mine-h1" href="[[~87]]">Сервис и ремонт ворот</p>
+							<a class="mine-h2" href="[[~88]]">Ремонт секционных ворот в Киеве</a>
+							<a class="mine-h2" href="[[~89]]">Ремонт откатных ворот в Киеве</a>
+							<a class="mine-h2" href="[[~90]]">Ремонт рольставней в Киеве</a>
+							<a class="mine-h2" href="[[~91]]">Ремонт шлагбаумов в Киеве</a>
+							<a class="mine-h2" href="[[~92]]">Ремонт автоматики для ворот в Киеве</a>
+							<a class="mine-h2" href="[[~93]]">Установка гаражных ворот</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<img src="images/dist/sl_10.png" alt="" title="" class="img-res pb-15 w-100">
+					<img src="images/dist/sl_11.png" alt="" title=""class="img-res w-100">
+				</div>
+				<div class="col-12 col-lg-7">
+					<div class="zagolovoc"><h1>АВТОМАТИЧЕСКИЕ ВОРОТА <span>RYTERNA PREMIUM.</span></h1></div>
+					<p>Компания R-Premium основана в 2000 году. Сначала у нас покупали американские автоматические ворота оптом и в розницу, а потом мы создали собственное производство. На сегодня нашу компанию можно назвать лидером в Украине. Мы изготовим автоматические ворота для гаражей, дворов, складов, заводов, автомоек. Создадим дизайн-проект, на основе которого построим процесс. Кроме этого, организуем доставку, установим ворота и подключим автоматику. Когда работы будут окончены, выдадим покупателю гарантийный талон с правом бесплатного сервисного обслуживания на год. Если ворота автоматические установили 5-10 лет назад, предложим заменить изношенные детали новыми запчастями.</p>
+					<p>У нас работают опытные мастера, которые прошли стажировку в г. Каунас (Литва). Получив базовые знания и закрепив информацию на практике, специалисты R-Premium решают нестандартные задачи. Например, когда у нас покупают автоматические <a href="[[~7]]">гаражные ворота</a>, мастера могут сузить и занизить проем, чтобы установить конструкцию, которую вы выбрали.</p>
+					<p>R-Premium работает, чтобы сделать жизнь каждого клиента более простой и спокойной. Наши автоматические ворота Украина ценит за максимальную безопасность. Все модели защищены от перекоса и падения полотна. В автоматических секционных воротах также установлен профиль против защемления пальцев и растяжения пружин. Срок эксплуатации наших продуктов – 20 лет.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="zagolovoc text-center pb-30"><h3>Как наши автоматические ворота меняют вашу жизнь?</h3></div>
+					<div class="row box-opis-li pb-30">
+						<div class="col item text-center">
+							<img src="images/dist/item_01.png" alt="" class="img-res">
+							<p>Открываете въезд с пульта дистанционного управления, сидя в салоне автомобиля. Особенно удобно, когда льет дождь.</p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_02.png" alt="" class="img-res">
+							<p>Наслаждаетесь тем, как ворота и автоматика работают в согласии.</p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_03.png" alt="" class="img-res">
+							<p>Пользуетесь системой «умный дом» и живете в комфорте и безопасности.</p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_04.png" alt="" class="img-res">
+							<p>Даете пульт в руки ребенку, чтобы открыть въезд во двор или в гараж.</p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_05.png" alt="" class="img-res">
+							<p>Открываете ворота в режиме калитки (не полностью), чтобы войти на территорию.</p>
+						</div>
+					</div>
+					<p>Мы используем качественную автоматику, которая отлично проявила себя в испытаниях и реальных условиях работы. На устройства действует официальная гарантия. Еще в нашем ассортименте есть автоматика для подземного монтажа. Ее обычно покупают для ретро ворот и других продуктов, которым важно соблюдать четкие ограничения к архитектурному стилю.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--box-lovyhka-->
+	<div class="box-lovyhka">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 box-bg-outline align-self-stretch">
+					<div class="box-bg"></div>
+				</div>
+				<div class="col-6">
+					<form class="mainform">
+						<input type="text" name="admin_email" class="form-control user d-none" value=""> 
+						<input type="text" name="project_name" class="form-control user d-none" value=""> 
+						<input type="text" name="form_subject" class="form-control user d-none" value=""> 
+						<input type="text" name="Страница сайта" class="form-control user d-none" value="">
+						<h2 class="title"><span>Оставьте заявку</span> на расчет стоимости</h2>
+						<div class="row">
+							<div class="col-6">
+								<div class="form-grup">
+									<label for="">Введите ширину (м):</label>
+									<div class="box-ico width">
 										<input name="Ширина" type="text" class="form-control" placeholder="Ширина, м">
 									</div>
-									<div class="form-grup">
-										<img src="img/ico-form-banner_3.png" class="img-ico-form-baner img-res">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-grup">
+									<label for="">Введите высоту (М):</label>
+									<div class="box-ico height">
 										<input name="Высота" type="text" class="form-control" placeholder="Высота, м">
 									</div>
-									<div class="form-grup">
-										<img src="img/ico-form-banner_1.png" class="img-ico-form-baner img-res">
-										<input name="Телефон" type="phone" class="form-control" placeholder="+38(0__) ___-__-__">
-									</div>
-									<div class="">
-										<input name="submit" type="submit" value="Заказать расчет" class="btn btn-defolt">
-									</div>
-
-									<div class="title-bottom-form">или<span>позвонить менеджеру</span></div>
-									<div class="subtitle-botom-form-phone d-flex flex-column">
-										<a href="tel:+380503900101">050 390 01 01</a>
-										<a href="tel:+380676960101">067 696 01 01</a>
-									</div>
-								</form>
-							</div>	
+								</div>
+							</div>
 						</div>
+						<div class="form-grup">
+							<label for="">Введите ваш телефон:</label>
+							<div class="box-ico phone">
+								<input name="Телефон" type="tel" class="form-control" placeholder="+38(0__) ___-__-__">
+							</div>
+						</div> 
+						<div class="form-grup form-grup-submit pb-45"> 
+							<input name="submit" type="submit" value="Заказать расчет" class="btn btn-defolt">
+						</div> 
+					</form>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<img src="images/dist/sl_12.png" alt="" title="" class="img-res pb-15 w-100">
+					<img src="images/dist/sl_13.png" alt="" title=""class="img-res w-100">
+				</div>
+				<div class="col-12 col-lg-7">
+					<div class="zagolovoc"><h2>КУПИТЬ АВТОМАТИЧЕСКИЕ ВОРОТА</h2></div>
+					<p>Нашими автоматическими воротами пользуются и большие предприятия, и маленькие частные дома. Они зарекомендовали себя, как красивые, износостойкие и надежные продукты. Если вам тоже приглянулись автоматические ворота, купить их можете на этом сайте или в нашем фирменном магазине, который есть в каждом крупном городе Украины. Менеджеры покажут ворота и расскажут, как ними пользоваться.</p>
+					<p>У нас делают покупки без наценок, потому что мы не работаем с посредниками. Все клиенты R-Premium могут купить ворота автоматические по единой цене в разных городах Украины. Чтобы убедиться в этом, оставьте заявку по телефону: 067 696 01 01.</p>
+					<p>От решения купить автоматические ворота цена отговаривает чаще всего. Поэтому мы каждый месяц проводим большие акции. Отслеживайте информацию на нашем сайте, чтобы сделать выгодную покупку! Если заказываете ворота автоматические, купить к ним сразу можете и калитку, окно, аппликацию из нержавеющей стали. Стоимость каждого дополнения вам сообщит менеджер компании.</p>
+					<p>Выставочный зал R-Premium – это место, где купить автоматические ворота предпочитает большинство наших клиентов! Мы собрали в одном месте все образцы ворот, каталоги продукции, а также материалы, фурнитуру и автоматику. Если для себя решили: «куплю автоматические ворота», приезжайте к нам по адресу: г. Киев, ул. Паисия Кайсарова, 7. Там мы проводим интерактивные экскурсии с понедельника по пятницу. Сможете посмотреть, из каких материалов мы изготовляем ворота, а также бесплатно получить два варианта визуализации проема. Предварительной записи не нужно – просто приезжайте к нам, чтобы осмотреться и купить автоматические ворота в Украине!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="zagolovoc"><h2>АВТОМАТИЧЕСКИЕ ВОРОТА ПРОДАЖА</h2></div>
+					<p>Мы принимаем участие в профильных выставках, приглашаем в свой шоу-рум и даем консультации по телефону. Кроме того, продажа автоматических ворот ведется онлайн. Впишите свой контактный номер и укажите размеры. Мы перезвоним, чтобы предложить несколько вариантов обустройства персонально для вас!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="box-zacaz-rascet pt-0 pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="galeri owl-carousel owl-theme owl-carousel-zacaz-rascet">
+
+						<div class="item">
+							<div class="banner-form-rashet">
+								<div class="box-img"><img src="images/dist/sl_16.png" alt="" class="img-res"></div>
+								<h3 class="h3">Mid Rib</h3>
+								<div class="pre-title">Ворота TLB (ресурс 25 000 циклов). Комплектующие из горячеоцинкованной стали. Сэндвич-панели: тип rib, 12 стандартных цветов RAL на выбор.</div>
+								<div class="d-flex">
+									<div class="box-razmer">2500х2040</div>
+									<div class="box-cena">16 499 грн.</div>
+								</div>
+								<div class="d-flex">
+									<div class="box-razmer">3000х2150</div>
+									<div class="box-cena">19 399 грн.</div>
+								</div>
+								<div class="d-flex">
+									<div class="box-razmer">4000х2500</div>
+									<div class="box-cena">26 699 грн.</div>
+								</div>
+
+								<div class="d-flex justify-content-between flex-column flex-lg-row pt-15">
+									<div class="box-big-cena pb-10 pb-lg-0"><span>от</span> 19 000 грн.</div>
+									<div class="box-btn"><a href="" class="btn btn-defolt">Заказать расчет ворот</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="banner-form-rashet">
+								<div class="box-img"><img src="images/dist/sl_17.png" alt="" class="img-res"></div>
+								<h3 class="h3">Top Rib</h3>
+								<div class="pre-title">Ворота TLB (ресурс 25 000 циклов). Комплектующие из горячеоцинкованной стали.</div>
+								<div class="d-flex">
+									<div class="box-razmer">2500х2040</div>
+									<div class="box-cena">16 499 грн.</div>
+								</div>
+								<div class="d-flex">
+									<div class="box-razmer">3000х2150</div>
+									<div class="box-cena">19 399 грн.</div>
+								</div>
+								<div class="d-flex">
+									<div class="box-razmer">4000х2500</div>
+									<div class="box-cena">26 699 грн.</div>
+								</div>
+
+								<div class="d-flex justify-content-between pt-15 flex-column flex-lg-row">
+									<div class="box-big-cena pb-10 pb-lg-0"><span>от</span> 19 000 грн.</div>
+									<div class="box-btn"><a href="" class="btn btn-defolt">Заказать расчет ворот</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="banner-form-rashet">
+								<div class="box-img"><img src="images/dist/sl_16.png" alt="" class="img-res"></div>
+								<h3 class="h3">Top Rib</h3>
+								<div class="pre-title">Ворота TLB (ресурс 25 000 циклов). Комплектующие из горячеоцинкованной стали.</div>
+								<div class="d-flex">
+									<div class="box-razmer">2500х2040</div>
+									<div class="box-cena">16 499 грн.</div>
+								</div>
+								<div class="d-flex">
+									<div class="box-razmer">3000х2150</div>
+									<div class="box-cena">19 399 грн.</div>
+								</div>
+								<div class="d-flex">
+									<div class="box-razmer">4000х2500</div>
+									<div class="box-cena">26 699 грн.</div>
+								</div>
+
+								<div class="d-flex justify-content-between pt-15 flex-column flex-lg-row">
+									<div class="box-big-cena pb-10 pb-lg-0"><span>от</span> 19 000 грн.</div>
+									<div class="box-btn"><a href="" class="btn btn-defolt">Заказать расчет ворот</a></div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
 
-				<div class="item" style="background-image: url(https://ryterna.com.ua/images/slider_entry.jpg);">
-					<div class="container">
+	<div id="form-popup" class="white-popup mfp-hide form-popup-tupe">
+		<form class="mainform">
+			<input id="title" type="hidden" value="" name="Модель" class="inputbox-title d-none">
+			<input id="title" type="hidden" value="" name="Цена" class="inputbox-cena d-none">
+			<div class="">
+				<div class="col-12 pb-20"> 
+					<p>Закажите расчет ваших ворот</p>
+					<p class="span">И наши менеджеры сделают для Вас точный расчет цены</p>
+				</div>
+				<div class="col-12 pb-20"> 
+					<input name="Ширина" id="width" placeholder="Ширина" type="text" class="form-control p-15 btn-block fz-768-10">
+				</div>
+				<div class="col-12 pb-20"> 
+					<input name="Высота" id="height" placeholder="Высота" type="text" class="form-control p-15 btn-block fz-768-10">
+				</div>
+				<div class="col-12 pb-20">
+					<input name="Телефон" size="40" type="tel" class="form-control p-15 btn-block fz-768-10 userphone-1" placeholder="Ваш телефон*" required="">
+				</div>
+				<div class="col-12">
+					<button type="submit" name="submit" class="btn btn-defolt">ЗАКАЗАТЬ РАСЧЕТ</button>
+				</div>
+			</div>
+			<input type="text" name="admin_email" class="form-control user d-none" value="ks@ryterna.com.ua,rp.form@yahoo.com">
+			<input type="text" name="project_name" class="form-control user d-none" value="Ловушка с окном">
+			<input type="text" name="form_subject" class="form-control user d-none" value="Ryterna.com.ua - Ловушка с окном">
+			<input type="text" name="Страница сайта" class="form-control user d-none" value="gl.max-spid">
+		</form>
+	</div>
+
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<img src="images/dist/sl_18.png" alt="" title="" class="img-res pb-15 w-100">
+					<img src="images/dist/sl_19.png" alt="" title=""class="img-res w-100">
+				</div>
+				<div class="col-12 col-lg-7">
+					<div class="zagolovoc"><h2>Цена на автоматические ворота</h2></div>
+					<p>Наши проекты покупают на производства, в гаражи и для дворов. Но в этих трех случаях цены на автоматические ворота отличаются между собой. Мы можем красить полотно в один из двухсот цветов по RAL, устанавливать окна или калитки, заменять стандартную фурнитуру «антикоррозийным пакетом». Поэтому на автоматические ворота цена может изменяться. Запросите расчет у нашего менеджера, чтобы узнать больше.</p>
+					<p><span class="title_h3">Цена автоматических ворот зависит от таких факторов:</span></p>
+					<ul>
+						<li><b>Цвет</b>.  Есть 12 стандартных цветов. Кроме этого, можно покрасить ворота в любой оттенок по RAL за дополнительную плату.</li>
+						<li><b>Панели</b>. Чаще всего у нас покупают ворота из панелей «полоса». Но вообще мы предлагаем больше вариантов: «филенка», «верхняя полоса», «гладкая поверхность», «микрополоса». Весь ассортимент можете посмотреть в шоу-руме или в каталоге.</li>
+						<li><b>Аксессуары</b>. Кроме окон, можем врезать в створку прозрачные секции, калитку, вентиляционную решетку. Уточните у менеджера, как от аксессуаров изменится на автоматические ворота цены.</li>
+						<li><b>Фурнитура</b>. Крепежи включены в базовый комплект поставки. Но автомойкам и гаражам у воды мы рекомендуем заказать отдельно «антикоррозийный пакет» фурнитуры. В нем усилена защита от агрессивной химии и постоянной влаги. У данного дополнения есть и плюсы, и минусы: повышается цена, ворота автоматические лучше переносят негативные факторы.</li>
+						<li><b>Тип</b>. Производим бытовые и промышленные ворота. У этих продуктов разная способность выдерживать интенсивную эксплуатацию. Рекомендуем выбирать ворота в зависимости от назначения. Установка промышленной модели в быту неоправданна. В то же время, на бытовые ворота автоматические цена ниже, но для заводов и складов они не подходят, потому что не выдержат жесткие условия эксплуатации.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p>На автоматические ворота цена в Украине напрямую зависит от размеров. Минимальные габариты нашего стандартного продукта – 2040×2500 мм. Кроме этого, мы занимаемся производством по индивидуальным размерам. Эту услугу часто заказывают для нестандартных проектов. Например, может обустроить вход в пивоварню или придорожное кафе.</p>
+					<p>Многие клиенты признали, что на автоматические ворота цена Украина у нас прозрачная и оправданная. Если покупка не вписывается в ваши планы, можете договориться о рассрочке или заказать стандартную модель без аксессуаров и дизайнерского окрашивания.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="prise-forem">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 box_fone">
+					<div class="zagolovoc"><h2>Автоматические ворота прайс</h2></div>
+					<p>Компания R-Premium сама занимается производством, поэтому наши клиенты могут управлять конечной ценой готовых проектов. Ниже в таблице мы представили табличку, куда вписали на ворота автоматические прайс. Можете скачать ее и просчитать цену будущего проекта. Или оставьте заявку по телефону – и мы сделаем просчет за 15 минут.</p>
+					<form method="" action="" style="" class="mainpriseform"> 
+						<input type="text" name="admin_email" class="form-control user d-none" value=""> 
+						<input type="text" name="project_name" class="form-control user d-none" value=""> 
+						<input type="text" name="form_subject" class="form-control user d-none" value=""> 
+						<input type="text" name="Страница сайта" class="form-control user d-none" value="">
+						<div class="label">Введите ваш телефон для скачивания:</div>
 						<div class="row align-items-center">
-							<div class="col-6 text-box">
-								<div class="ferst">ФИРМЕННЫЙ САЛОН</div>
-								<div class="Tvo">ГАРАЖНЫХ ВОРОТ</div>
-								<div class="last">RYTERNA</div>
-							</div>	
-							<div class="col-6 form-baner d-flex align-items-center">
-								<form method="" action="" style="" class="mainform">
-									<input type="text" name="admin_email" class="form-control user d-none" value="ks@ryterna.com.ua">
-									<input type="text" name="project_name" class="form-control user d-none" value="Ловушка номер 1">
-									<input type="text" name="form_subject" class="form-control user d-none" value="Ryterna.com.ua - Форма номер 1">
-									<input type="text" name="Страница сайта" class="form-control user d-none" value="https://ryterna.com.ua/produktsiya">
-
-									<div class="title">Оставте заявку</div>
-									<div class="subtitle">на расчет стоимости</div>
-									<div class="form-grup mt-25">
-										<img src="img/ico-form-banner_2.png" class="img-ico-form-baner img-res">
-										<input name="Ширина" type="text" class="form-control" placeholder="Ширина, м">
+							<div class="col-5">
+								<div class="form-grup">
+									<div class="box-ico phone">
+										<input name="Телефон" type="tel" class="form-control" placeholder="+38(0__) ___-__-__">
 									</div>
-									<div class="form-grup">
-										<img src="img/ico-form-banner_3.png" class="img-ico-form-baner img-res">
-										<input name="Высота" type="text" class="form-control" placeholder="Высота, м">
-									</div>
-									<div class="form-grup">
-										<img src="img/ico-form-banner_1.png" class="img-ico-form-baner img-res">
-										<input name="Телефон" type="phone" id="userphone-1" class="form-control" placeholder="+38(0__) ___-__-__">
-									</div>
-									<div class="">
+								</div>
+							</div>
+							<div class="col ico">
+								<img src="images/dist/sl_22.png" alt="" class="img-res">
+							</div>
+							<div class="col-5">
+								<div class="form-grup form-grup-submit">
+									<div class="box-ico">
 										<input name="submit" type="submit" value="Заказать расчет" class="btn btn-defolt">
-									</div>
-
-									<div class="title-bottom-form">или<span>позвонить менеджеру</span></div>
-									<div class="subtitle-botom-form-phone d-flex flex-column">
-										<a href="tel:+380503900101">050 390 01 01</a>
-										<a href="tel:+380676960101">067 696 01 01</a>
-									</div>
-								</form>
-							</div>	
+									</div> 
+								</div>
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
-
+				<div class="col-4 box_fone_dor"></div>
 			</div>
 		</div>
-
-		<div class="main-naw pt-40 pb-25">
-			<div class="container">
-				<div class="row">
-					<div class="col-4">
-						<div class="item" style="background-image: url(img/menu-1.jpg);">
-							<div class="box-hr d-flex flex-column">
-								<a class="mine-h1" href="/produktsiya/sektsionnye-vorota">СЕКЦИОННЫЕ ВОРОТА</a>
-								<a class="" href="https://ryterna.com.ua/produktsiya/garazhnye-vorota">Гаражные ворота</a>
-								<a class="" href="https://ryterna.com.ua/produktsiya/bokovye-vorota">Боковые ворота</a>
-								<a class="" href="https://ryterna.com.ua/produktsiya/promyshlennye-vorota">Промышленные ворота</a>
-								<p class="" href="/">Ангарные ворота</p>
-								<a class="" href="https://ryterna.com.ua/produktsiya/panoramnye-vorota">Панорамные ворота</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="item" style="background-image: url(img/menu-2.jpg);">
-							<div class="box-hr d-flex flex-column">
-								<a class="mine-h1" href="https://ryterna.com.ua/produktsiya/ulichnye-vezdnye-vorota">УЛИЧНЫЕ ВОРОТА</a>
-								<a class="mine-h2" href="https://ryterna.com.ua/produktsiya/otkatnye-vorota">Откатные ворота</a>
-								<a class="mine-h2" href="https://ryterna.com.ua/produktsiya/raspashnye-vorota">Распашные ворота</a>
-								<p class="mine-h2" href="/">Кованные ворота</p>
-								<p class="mine-h2" href="/">Фурнитура к воротам</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="item" style="background-image: url(img/menu-3.jpg);">
-							<div class="box-hr d-flex flex-column">
-								<a class="mine-h1" href="https://ryterna.com.ua/produktsiya/avtomatika-dlya-vorot">АВТОМАТИКА ДЛЯ ВОРОТ</a>
-								<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-sektsionnykh-vorot">Секционная автоматика</a>
-								<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-raspashnykh-vorot">Распашная автоматика</a>
-								<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-otkatnykh-vorot">Откатная автоматика</a>
-								<a class="mine-h2" href="/produktsiya/avtomatika-dlya-vorot/avtomatika-dlya-promyshlennykh-vorot">ПРОМЫШЛЕННая автоматика</a>
-								<p class="mine-h2" href="/">Аксесуары к автоматики</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="item" style="background-image: url(img/menu-4.jpg);">
-							<div class="box-hr d-flex flex-column">
-								<p class="mine-h1" href="/">ДВЕРИ</p>
-								<a class="mine-h2" href="https://ryterna.com.ua/produktsiya/premium-dveri">Премиум двери Ryterna</a>
-								<p class="mine-h2" href="/">Бытовые двери</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="item" style="background-image: url(img/menu-5.jpg);">
-							<div class="box-hr d-flex flex-column">
-								<a class="mine-h1" href="https://ryterna.com.ua/produktsiya/avtomaticheskie-dveri">АВТОМАТИЧЕСКИЕ ДВЕРИ</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="item" style="background-image: url(img/menu-6.jpg);">
-							<div class="box-hr d-flex flex-column">
-								<a class="mine-h1" href="https://ryterna.com.ua/produktsiya/avtomaticheskie-dveri">МОДУЛЬНЫЕ ЗДАНИЯ</a>
-							</div>
-						</div>
-					</div>
+	</div>
+	<div class="content-box box_sd_title">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="zagolovoc"><h2>СОВРЕМЕННЫЙ ДИЗАЙН В ВАШЕМ СТИЛЕ</h2></div>
+					<div class="pre_title">АВТОМАТИЧЕСКИЕ ВОРОТА В 200 ЦВЕТАХ, РАЗНЫЕ МОДЕЛИ</div>
 				</div>
 			</div>
 		</div>
-		
-		<div class="content-box pt-40 pb-40">
-			<div class="container">
-				<div class="row">
-					<!--div class="col-12 text-center"><div class="zagolovoc"><h2>АВТОМАТИЧЕСКИЕ ВОРОТА RYTERNA PREMIUM</h2></div></div-->
-					<div class="col-7">
-						<div class="zagolovoc"><h1>АВТОМАТИЧЕСКИЕ ВОРОТА RYTERNA PREMIUM</h1></div>
-						<p>R- Premium— это команда профессионалов, которая имеет за плечами общую идею. Начиная с монтажа секционных ворот американских производителей, мы пришли к собственному изготовлению. Миссия компании – сделать вашу жизнь проще, комфортнее и красивее. Мы не просто производим автоматические ворота в гараж и во двор. Мы предоставляем инновационный продукт, которым стоит гордиться. </p>
-						<p>История компании началась в 1993 году в Каунасе (Литва). В 2000 году появился еще один город, который узнал о воротах Ryterna - Киев.  Полноценное производство в Украине позволяет вам быстрее получать фирменную продукцию.</p>
-						<p>Никогда ранее создание гармоничного дизайна не было таким простым. Среди 200 оттенков по шкале RAL вы выберете вариант окрашивания панелей Ryterna (Киев), который подходит именно вам! Индивидуальное производство автоматических ворот сделает каждый продукт уникальным. </p>
-						<p>Нажатие одной кнопки подарит вам ощущение, что весь мир у ваших ног. Вы полностью контролируете, как и когда автоматические ворота открываются или закрываются. Возникло внезапное препятствие? Створки ворот остановят ход или вернутся в исходное положение, пока вы думаете, какое решение предпринять.</p>
-					</div>
-					<div class="col-5">
-						<img src="img/avto1.jpg" alt="Автоматические ворота Ритерна в Киеве." title="Автоматические ворота Ритерна в Киеве." class="img-res pb-5">
-						<img src="img/avto2.jpg" alt="Ворота автоматические Ryterna в Киеве." title="Ворота автоматические Ритерна в Киеве"class="img-res">
-					</div>
+	</div>
+
+	<div class="box_sd">
+		<div class="container">
+			<div class="row">
+				<div class="items col-3 item_01"><p class="ferst-line">Безопасно и комфортно</p><p>Когда закрываете ворота, не защемите пальцы. По периметру расположен уплотнитель, поэтому нет риска получить травму. Ворота с автоматикой остановятся, заметив препятствие в проеме. За эту функцию отвечают фотоэлементы.</p></div>
+				<div class="items col-3 item_02"><p class="ferst-line">Ворота с гарантией</p><p>Пользуйтесь нашими  воротами, зная, что мы можем бесплатно ликвидировать неисправности. Компания R-Premium предлагает сервисное обслуживание на год. Пользуйтесь воротами и не переживайте о замене подвижных деталей.</p></div>
+				<div class="items col-3 item_03"><p class="ferst-line">Боковая дверь в воротах</p><p>Устанавливаем дополнительные объекты в одном цвете. Заказывайте боковую дверь или отдельностоящую калитку с воротами. Экономьте ресурс в воротах. Делайте вход комфортным для автомобилей и людей (работников, членов семьи).</p></div>
+				<div class="items col-3 item_04"><p class="ferst-line">Окна разных размеров</p><p>Устанавливаем декоративные раскладки. Монтируем в воротах окна разных размеров. Чтобы ознакомиться с ценами, свяжитесь с менеджером по телефону или через форму обратной связи. Расчет на ворота будет готов через 15 минут.</p></div>
+				<div class="items col-5 item_05"><p class="ferst-line">Суперсовременное покрытие ALUMAX</p><p>Устанавливаем накладки из алюминия. Можем выполнять декоративную фрезеровку, менять цвета и дизайн. Выбирайте цвет аксессуаров в воротах по RAL. Цена зависит от сложности работ. Обещаем, вы будете гордиться новыми воротами.</p></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="box-lovyhka box-lovyhka-calcdox">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 box_sd_title">
+					<div class="zagolovoc"><h2>У ВАС УЖЕ ЕСТЬ РАЗМЕРЫ ВОРОТ?</h2></div>
+					<div class="pre_title">Введите данные, и мы сделаем для вас точный расчет</div>
+				</div>
+				<div class="col-6 box-bg-outline align-self-stretch">
+					<div class="box-bg"></div>
+				</div>
+				<div class="col-6">
+
+					<form class="banner-form-rashet mainform">
+						<input type="text" name="admin_email" class="form-control user d-none" value="[[#1.MainMailUrl]]">
+						<input type="text" name="project_name" class="form-control user d-none" value="Ловушка с калькулятором">
+						<input type="text" name="form_subject" class="form-control user d-none" value="Ryterna.com.ua - Ловушка с калькулятором">
+						<input type="text" name="Страница сайта" class="form-control user d-none" value="[[~[[*id]]]]">
+
+						<div class="row align-items-center">
+
+							<div class="col-6 form-grup">
+								<label for="">тип ворот:</label>
+								<div class="box-ico select">
+									<select class="form-control" name="Тип ворот">
+										<option>Гаражные</option>
+										<option>Промышленные</option>
+										<option>Другие</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-6 form-grup">
+								<div class="auto pb-15">
+									<input type="radio" class="radio form-check-input" name="Тип управления" value="Автоматическое управление" checked="">
+									<label class="form-check-label auto-uprav poctogramm">Автоматическое управление</label>
+								</div>
+								<div class="ruci">
+									<input type="radio" class="radio form-check-input" name="Тип управления" value="Ручное управление" checked="">
+									<label class="form-check-label ruc-uprav poctogramm">Ручное управление</label>
+								</div>
+							</div>
+							<div class="col-6 form-grup width">
+								<label for="">Введите ширину (м):</label>
+								<div class="box-ico height">
+									<input name="Ширину" type="number" class="form-control" placeholder="мм" min="0" max="6000" step="10">
+								</div>
+							</div>
+							<div class="col-6 form-grup">
+								<label for="">Введите высоту (М):</label>
+								<div class="box-ico height">
+									<input class="form-control" name="Высота" type="number" value="" min="0" max="6000" step="10" placeholder="мм">
+								</div>
+							</div>
+							<div class="col-6 form-grup">
+								<label for="">Введите ваш телефон:</label>
+								<div class="box-ico phone">
+								<input type="tel" name="Телефон" class="form-control" placeholder="Ваш телефон*" required>
+							</div>
+							</div>
+							<div class="col-6 form-grup">
+								<label for="">Введите ваше имя</label>
+								<div class="box-ico user">
+								<input class="form-control" placeholder="Ваше имя" name="Имя" type="text">
+							</div>
+							</div>
+
+							<div class="col-12 pt-30">
+								<div class="form-grup form-grup-submit">
+									<input name="submit" type="submit" value="ЗАКАЗАТЬ РАСЧЕТ" class="btn btn-defolt">
+								</div>
+								<div class="pt-5 sm_text-sab text-center">Ваши данные никогда не будут переданы 3-м лицам</div>
+							</div>
+
+						</div>	
+
+					</form>
+
+				</div>			
+			</div>
+		</div>
+	</div>
+
+
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="zagolovoc text-center no-border"><h2>ГДЕ ЗАКАЗАТЬ АВТОМАТИЧЕСКИЕ ВОРОТА?</h2></div>
+					<p>На сегодня у нас крупнейший выставочный зал в Украине. Можете автоматические ворота заказать прямо там! Менеджер проведет экскурсию, чтобы вы могли посмотреть и пощупать все материалы. Кроме этого, мы проводим виртуальные экскурсии. Записывайтесь по телефону: 067 696 01 01. Так вы посмотрите образцы наших ворот и материалов, не отходя от домашнего компьютера. Это удобно, если живете не в Киеве или хотите сделать онлайн-покупку.</p>
+					<p>В шоу-руме и фирменных магазинах представлены стандартные модели. Но у нас также часто покупают автоматические ворота под заказ. Опишите менеджеру свое видение, отправьте фото проема – и мы бесплатно предложим два варианта визуализации.</p>
 				</div>
 			</div>
 		</div>
+	</div>
 
-
-		<div class="blasc-lovuh pt-40 pb-40">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="ferst">УЗНАЙТЕ СТОИМОСТЬ ВАШИХ ВОРОТ</div>
-						<div class="last"> БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ И ВЫЕЗД СПЕЦИАЛИСТА</div>
+	<div class="content-box pb-30">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="zagolovoc text-center pb-30"><h3>Как заказать автоматические ворота в R-Premium?</h3></div>
+					<div class="row box-opis-li pb-30">
+						<div class="col item text-center">
+							<img src="images/dist/item_06.png" alt="" class="img-res">
+							<p>оставьте заявку на сайте – и мы вам перезвоним</p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_07.png" alt="" class="img-res">
+							<p>свяжитесь с менеджером по телефону: <b>067 696 01 01</b></p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_08.png" alt="" class="img-res">
+							<p>посетите фирменный магазин <b>R-Premium</b> в вашем городе</p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_09.png" alt="" class="img-res">
+							<p>загляните в наш столичный выставочный зал</p>
+						</div>
+						<div class="col item text-center">
+							<img src="images/dist/item_10.png" alt="" class="img-res">
+							<p>посетите выставку с участием R-Premium</p>
+						</div>
 					</div>
-					<div class="col-12 pt-15">
-						<form class="mainform row">
-							<input type="text" name="admin_email" class="form-control user d-none" value="ks@ryterna.com.ua">
-							<input type="text" name="project_name" class="form-control user d-none" value="Ловушка номер 2">
-							<input type="text" name="form_subject" class="form-control user d-none" value="Ryterna.com.ua - Форма номер 2">
-							<input type="text" name="Страница сайта" class="form-control user d-none" value="https://ryterna.com.ua/">
-							<div class="col-3 form-grup">
-								<input name="Телефон" type="phone" class="form-control" placeholder="+38(0__)___-__-__" required="">
-							</div>
-							<div class="col-3 form-grup">
-								<input name="Ширина" type="text" class="form-control" placeholder="Ширина, м">
-							</div>
-							<div class="col-3 form-grup">
-								<input name="Высота" type="text" class="form-control" placeholder="Высота, м">
-							</div>
-							<div class="col-3">
-								<input name="submit" type="submit" value="Хочу расчет" class="btn btn-defolt">
-							</div>
-						</form>
-					</div>
+					<p>Если у вас остались вопросы, заполните онлайн-форму обратной связи. Мы расскажем о воротах, поможем оформить заказ и сориентируем по срокам производства. Заказывайте ворота у проверенной компании – <b>R-Premium</b>!</p>
 				</div>
 			</div>
 		</div>
+	</div>
 
-
-		<div class="content-box pt-40 pb-40">
-			<div class="container">
-				<div class="row">
-					<!--div class="col-12 text-center"><div class="zagolovoc"><h2>АВТОМАТИЧЕСКИЕ ВОРОТА RYTERNA PREMIUM</h2></div></div-->
-					<div class="col-7">
-						<div class="zagolovoc"><h2>ЦЕНА НА АВТОМАТИЧЕСКИЕ ВОРОТА</h2></div>
-						<p style="margin-bottom: 0px;">Удовольствие и личный комфорт не даются бесплатно. С нами вы научитесь платить, а не переплачивать. Все детали о заказе продукции Ryterna в <a href="https://ryterna.com.ua/salony-po-ukraine/kupit-vorota-v-kieve">Киеве</a>, <a href="https://ryterna.com.ua/salony-po-ukraine/garazhnye-vorota-kharkov">Харькове</a> мы оговариваем сразу, чтобы вы были готовы к покупке.</p>
-						<p>Честная и прозрачная цена автоматических ворот – это одна из главных причин нашей популярности. С нами вы не:</p>
-						<ul class="">
-							<li>платите посреднику;</li>
-							<li>довольствуетесь только типовыми конструкциями;</li>  
-							<li>ждете готовые ворота недели и месяца;</li>
-							<li>докупаете отдельно крепежи для монтажа;</li> 
-							<li>ищете того, кто установит ворота и настроит электропривод. </li>                   
-						</ul>
-						<p>Стоимость готового продукта зависит от комплектующих, дополнительных декоративных элементов, размера и массы створок. Расчет цены осуществляем по первому требованию. R- Premium успешно производит конструкции таких конфигураций:</p>
-						<ul class="list list-ok alt">
-							<li>распашные;</li>
-							<li><a href="https://ryterna.com.ua/salony-po-ukraine/otkatnye-vorota-v-kieve">откатные;</a></li>  
-							<li>секционные;</li>
-							<li>рулонные;</li> 
-							<li>кованные. </li>                   
-						</ul>
-						<p style="margin-bottom: 0px;">Промышленные ворота с усиленной конструкцией и оцинкованными крепежами не подведут при интенсивной эксплуатации. Они выстоят в условиях повышенной влажности и перепада температур. </p>
-						<p style="">Отдельного внимания заслуживают защитные роллеты, противовзломные двери и шлагбаумы. Они помогут находится в безопасности. </p>
-					</div>
-					<div class="col-5">
-						<img src="img/price1.jpg" class="img-res" alt="Цена на автоматические ворота в Киеве" title="Цена на автоматические ворота в Киеве">
-						<img src="img/price2.jpg" class="img-res" alt="Ворота автоматические в Киеве по цене производителя" title="Ворота автоматические в Киеве по цене производителя">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="content-box pt-40 pb-40">
-			<div class="container">
-				<div class="row">
-					<!--div class="col-12 text-center"><div class="zagolovoc"><h2>АВТОМАТИЧЕСКИЕ ВОРОТА RYTERNA PREMIUM</h2></div></div-->
-					<div class="col-7">
-						<div class="zagolovoc"><h2>КАК КУПИТЬ АВТОМАТИЧЕСКИЕ ВОРОТА</h2></div>
-						<p>Мы уделяем внимание вопросам качества, надежности и безопасности. Для нас продажа автоматических ворот означает переход к инновационной системе контроля доступа. Никакая мелочь не скроется из виду. Система умного доступа позволяет разделить ответственность: вы принимаете решения, а автоматика воплощает их в жизнь. </p>
-						<p>Многолетний опыт и забота о безопасности – это компоненты, благодаря которым компания Ryterna Украина разработала ряд совершенных технических решений для вашего дома. </p>
-						<p>Люди – ценный ресурс, благодаря которому неосуществимые цели становятся реальностью. После бесплатной консультации менеджеров вы сделаете выбор, которым будете гордиться. На объекте наши технические специалисты установят ворота и настроят электропривод. </p>
-						<p>В процессе эксплуатации автоматической системы на все проблемы мы находим решения почти мгновенно. Все, что нужно – связаться с нами! Долгое ожидание – это не о нас: производство сосредоточено в Киеве. </p>
-						<p>Думаете, стоит ли купить автоматические ворота и двери сегодня? Простые продуманные решения и комфорт без ограничений – это то, что вы получите взамен старого ограждения, к которому вы привыкли.  </p>
-						<p>Чтобы заказать <a href="https://ryterna.com.ua/salony-po-ukraine/avtomaticheskie-vorota-kiev">автоматические ворота Киев</a> и двери от производителя, назовите цвет, тип и фактуру панелей. Вполне возможно, что ворота мечты будут защищать ваши владения уже сегодня. </p>
-					</div>
-					<div class="col-5">
-						<img src="img/zakaz1.jpg" class="img-res" alt="Можете посетить наш главный салон секционных ворот в Киеве, который располагается по адресу улица Кайсарова 7" title="На фото салон гаражных секционных ворот в городе Киев">
-						<img src="img/zakaz2.jpg" class="img-res" alt="Відкатні, розпашні ворота, автоматика, шлагбауми. Тільки сертифікована та якісна продукція. Гарантія і сервіс." title="Новинка гаражных ворот Ритерна">
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="content-box pt-40 pb-30 box-galeri">
-			<div class="container">
-				<div class="row gallerymagnificPopup">
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-28-1.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-28-1.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+<div class="content-box new_box-galeri">
+			<div class="container-fluid">
+				<div class="row no-gutters gallerymagnificPopup">
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(1).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(1).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-22-1.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-22-1.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(2).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(2).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a> 
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-15-2.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-15-2.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(3).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(3).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-14-2.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-14-2.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(4).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(4).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-11-1.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-11-1.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(5).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(5).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-10.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-10.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(6).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(6).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-7.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-7.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(7).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(7).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-6-1.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-6-1.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(8).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(8).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-4.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-4.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(9).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(9).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-3-1.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-3-1.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<span class="">Премиум ворота Ryterna</span>
-						</a>
-					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-2-2.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-2-2.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<span class="">Премиум ворота Ryterna</span>
-						</a>
-					</div>
-					<div class="col-3 item">
-						<a href="img/garazhnyie-vorota-ryterna-1-2.jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
-							<img src='img/garazhnyie-vorota-ryterna-1-2.jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+					<div class="col-12 col-sm-6 col-md-4 col-lg item">
+						<a href="https://ryterna.com.ua/img/galeri/main/2/1%20(10).jpg" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
+							<img src='https://ryterna.com.ua/img/galeri/main/2/1%20(10).jpg' class="img-res" alt="На картинке стандартные ворота в гараж с ручкой для подъема" title='На картинке стандартные ворота в гараж с ручкой для подъема'>
 							<span class="">Премиум ворота Ryterna</span>
 						</a>
 					</div>
@@ -440,69 +736,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</div>
-
-
-
-
-	<div class="container pt-25">
-		<div class="row">
-			<div class="col-12 col-sm-3 col-md-12 col-lg-6 col-xl-3 bg col-a">
-				<h2 class="col-a">Welcome to startup HTML template OptimizedHTML 5!</h2>
-			</div>
-		</div>
-	</div>
-
-	<!-- Custom HTML / Remove before use -->
-
-	<div class="container pt-25">
-		<div class="row">
-			<div class="col-12">
-				<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-				<div class="parent"> <!-- Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/ -->
-					<img class="lazy img-responsive example-img"
-					src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-					data-src="img/@1x/preview.jpg"
-					data-srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x"
-					alt="Start HTML5 Template">
-				</div>
-				<br>
-
-				<i class="fab fa-acquisitions-incorporated"></i>
-				<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-				<i class="fa fa-eercast" aria-hidden="true"></i>
-				<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. <em>Ad distinctio animi</em>, dolorum eaque praesentium unde aliquid, mollitia itaque voluptate quos modi et incidunt tempora fugiat voluptatum quia esse dolor repellat.</p>
-				<br>
-				<div class="example-grid">
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo vero molestias, esse doloribus corrupti, nemo minus ullam tempore tenetur magni aut quos soluta sit adipisci eius expedita amet non.</div>
-					<div>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-
-	<script src="js/scripts.min.js"></script>
-</body>
-</html>
+</div>
+<!--#include virtual="/parts/footer.html" -->
