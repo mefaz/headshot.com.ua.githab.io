@@ -55,7 +55,7 @@ $('.grid').imagesLoaded( function() {
 			}
 		}
 	});
-	
+
 	$('.raboti-carusel').owlCarousel({
 		loop:true,
 		//margin:10,
@@ -85,6 +85,27 @@ $('.grid').imagesLoaded( function() {
 			}
 		}
 	});
+	$('.galeri-primer').owlCarousel({
+		loop:true,
+		//margin:10,
+		nav: false,
+		dots: false,
+		items:1,responsive : {
+			0 : {
+				items:1,mouseDrag:false,touchDrag:false
+			},
+			768 : {
+				items:1,mouseDrag:true,touchDrag:true
+			}
+		}
+	});
+
+$('.box-primer .btn-next').click(function() {
+    $('.galeri-primer').trigger('next.owl.carousel');
+});
+$('.box-primer .btn-prew').click(function() {
+    $('.galeri-primer').trigger('prev.owl.carousel');
+});
 
 	$(".panel-img .item").on( "click", function(item) {
 		var namePanel = $(this).attr('name-panel');
